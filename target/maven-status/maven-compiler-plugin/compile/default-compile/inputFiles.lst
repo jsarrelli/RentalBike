@@ -1,0 +1,12 @@
+/home/jsarrelli/workspace/RentalBike/src/platform/Client.java
+/home/jsarrelli/workspace/RentalBike/src/rentals/SingleRental.java
+/home/jsarrelli/workspace/RentalBike/src/rentals/Rental.java
+/home/jsarrelli/workspace/RentalBike/src/factories/AbstractFactory.java
+/home/jsarrelli/workspace/RentalBike/src/factories/RentalTypes.java
+/home/jsarrelli/workspace/RentalBike/src/rentals/HourRental.java
+/home/jsarrelli/workspace/RentalBike/src/platform/Main.java
+/home/jsarrelli/workspace/RentalBike/src/rentals/DayRental.java
+/home/jsarrelli/workspace/RentalBike/src/factories/RentalFactory.java
+/home/jsarrelli/workspace/RentalBike/src/platform/Bike.java
+/home/jsarrelli/workspace/RentalBike/src/platform/Platform.java
+/home/jsarrelli/workspace/RentalBike/src/rentals/WeekRental.java
