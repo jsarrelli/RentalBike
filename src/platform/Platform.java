@@ -33,27 +33,26 @@ public class Platform {
 		return instance;
 	}
 
-	public Rental rentABike(Client client, RentalTypes rentType) throws Exception {
+	public Rental newRent(Client client, RentalTypes rentType) throws Exception {
 		Bike availableBike = getAvailableBike();
 		if (availableBike == null) {
 			throw new Exception("There is no available bike");
 		}
 		 Rental rent=factory.newRent(rentals.size(),rentType, client, availableBike);
-		 rentals.put(rent.getId(), rent);
 		 return rent;
 
 	}
 
 	public HourRental newHourRental(Client client) throws Exception {
-		return (HourRental) rentABike(client, RentalTypes.HOURLY);
+		return (HourRental) newRent(client, RentalTypes.HOURLY);
 	}
 
 	public WeekRental newWeekRental(Client client) throws Exception {
-		return (WeekRental) rentABike(client, RentalTypes.WEEKLY);
+		return (WeekRental) newRent(client, RentalTypes.WEEKLY);
 	}
 
 	public DayRental newDayRental(Client client) throws Exception {
-		return (DayRental) rentABike(client, RentalTypes.DAILY);
+		return (DayRental) newRent(client, RentalTypes.DAILY);
 	}
 
 	private Bike getAvailableBike() {

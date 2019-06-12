@@ -3,23 +3,20 @@ package rentals;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 
-import platform.Client;
-
-public class FamilyRental implements Rental {
+public class FamilyRental extends Promotion implements Rental  {
 	private int id;
 	private ArrayList<Rental> rentals;
 
 	public FamilyRental(int id) {
 		super();
 		this.id = id;
-	
-
+		this.rentals = new ArrayList<Rental>();
 	}
 
 	@Override
 	public float getEstimatedCharge(LocalDateTime estimatedDate) {
 		return (float) rentals.parallelStream().mapToDouble(rental -> rental.getEstimatedCharge(estimatedDate)).sum();
-		
+
 	}
 
 	@Override
@@ -43,13 +40,21 @@ public class FamilyRental implements Rental {
 	public void setId(int id) {
 		this.id = id;
 	}
-	
-	public void addRental(Rental rental) throws Exception {
-		if (rentals.size() <= 5 && rentals.size() >= 3) {
-			this.rentals.add(rental);
+
+	public void addRentals(ArrayList<Rental> associateRentals) throws Exception {
+		if (validateNumberOfAssociateRentals(associateRentals) && validateTypesOfRentals(associateRentals))  {
+			this.rentals.addAll(associateRentals);
 		} else {
-			throw new Exception("Error! Family Rental accepts 3 to 5 rentals");
+			throw new Exception("Error! Family Rental accepts 3 to 5 rentals and not inlude another promotions");
 		}
+	}
+
+	private boolean validateTypesOfRentals(ArrayList<Rental> associateRentals) {
+		return !associateRentals.parallelStream().anyMatch(rental-> Promotion.class.isAssignableFrom(rental.getClass()));
+	}
+
+	private boolean validateNumberOfAssociateRentals(ArrayList<Rental> associateRentals) {
+		return associateRentals.size() <= 5 && associateRentals.size() >= 3;
 	}
 
 }

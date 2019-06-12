@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 import factories.RentalTypes;
 import rentals.FamilyRental;
+import rentals.Promotion;
 import rentals.Rental;
 
 public class Menu {
@@ -83,30 +84,43 @@ public class Menu {
 
 	private void rent() throws Exception {
 
-		Client client = askForClientName();
-		RentalTypes rentType = askForRentalType();
-		Rental rental = platform.rentABike(client, rentType);
-		if (rentType == RentalTypes.FAMILY) {
-			loadRentals((FamilyRental) rental);
+		Rental rental = askForRental();
+		if (rental.getClass().getSimpleName().equals(FamilyRental.class.getSimpleName())) {
+			addRentalsToPromotion((FamilyRental) rental);
 		}
-		System.out.println("Your rental Id: " + rental.getId());
+		platform.getRentals().put(rental.getId(), rental);
+		System.out.println("Success! Your rental Id: " + rental.getId());
 
 	}
 
-	private void loadRentals(FamilyRental rental) throws Exception {
-		System.out.println("Load from 3 to 5 rentals. Type '999' when done/n");
+	private void addRentalsToPromotion(FamilyRental familyRental) throws Exception {
+
+		ArrayList<Rental> associateRentals = new ArrayList<Rental>();
+		System.out.println("Load from 3 to 5 rentals.");
 		do {
 
-			int id = Integer.valueOf(scanner.nextLine());
-			if (id == 999) {
+			Rental associateRental = askForRental();
+			if (Promotion.class.isAssignableFrom(associateRental.getClass())) {
+				System.out.println("Invalid type");
+			}else {
+				associateRentals.add(associateRental);
+			}
+			
+			System.out.println("Do you wish to continue? yes or no :");
+			String input = scanner.nextLine();
+			if (input.equalsIgnoreCase("no")) {
 				break;
 			}
-			Rental actualRental = platform.getRentals().get(id);
-			if (rental != null) {
-				rental.addRental(actualRental);
-			}
-		} while (rental.getRentals().size() <= 5);
 
+		} while (familyRental.getRentals().size() <= 5);
+		familyRental.addRentals(associateRentals);
+
+	}
+
+	private Rental askForRental() throws Exception {
+		RentalTypes rentType = askForRentalType();
+		Client client = askForClientName();
+		return platform.newRent(client, rentType);
 	}
 
 	private RentalTypes askForRentalType() {
@@ -116,6 +130,7 @@ public class Menu {
 		int index = 0;
 		for (RentalTypes rentalType : rentTypes) {
 			System.out.println(index + 1 + "." + rentalType.getValue());
+			index++;
 		}
 		Integer rentTypeIndex = Integer.parseInt(scanner.nextLine()) - 1;
 		rentType = rentTypes.get(rentTypeIndex);
