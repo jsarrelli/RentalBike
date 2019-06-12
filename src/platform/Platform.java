@@ -16,19 +16,19 @@ public class Platform {
 	private static Platform instance;
 	private ArrayList<Bike> bikes;
 	private ArrayList<Client> clients;
-	private HashMap<Integer,Rental> rentals;
+	private HashMap<Integer, Rental> rentals;
 	private RentalFactory factory;
 
 	private Platform() {
-		this.clients=new ArrayList<Client>();
-		this.bikes=new ArrayList<Bike>();
-		this.rentals=new HashMap<Integer, Rental>();
-		this.factory= new RentalFactory();
+		this.clients = new ArrayList<Client>();
+		this.bikes = new ArrayList<Bike>();
+		this.rentals = new HashMap<Integer, Rental>();
+		this.factory = new RentalFactory();
 	}
 
 	public static Platform getInstance() {
 		if (instance == null) {
-			instance= new Platform();
+			instance = new Platform();
 		}
 		return instance;
 	}
@@ -38,8 +38,8 @@ public class Platform {
 		if (availableBike == null) {
 			throw new Exception("There is no available bike");
 		}
-		 Rental rent=factory.newRent(rentals.size(),rentType, client, availableBike);
-		 return rent;
+		Rental rent = factory.newRent(rentals.size(), rentType, client, availableBike);
+		return rent;
 
 	}
 
@@ -63,10 +63,10 @@ public class Platform {
 		return clients.parallelStream().filter(client -> client.getName().equalsIgnoreCase(name)).findAny()
 				.orElse(null);
 	}
-	
-	public List<RentalTypes> getRentalTypes(){
-	
-		return  Arrays.asList(RentalTypes.values());
+
+	public List<RentalTypes> getRentalTypes() {
+
+		return Arrays.asList(RentalTypes.values());
 	}
 
 	public void addClient(String name) {
