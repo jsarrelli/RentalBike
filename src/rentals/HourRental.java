@@ -8,8 +8,8 @@ import platform.Client;
 
 public class HourRental extends SingleRental {
 
-	public HourRental( Client client, Bike bike) {
-		super(5, client, bike);
+	public HourRental(int id, Client client, Bike bike) {
+		super(id, 5, client, bike);
 	}
 
 	@Override

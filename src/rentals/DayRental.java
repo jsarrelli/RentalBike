@@ -7,8 +7,8 @@ import platform.Client;
 
 public class DayRental extends SingleRental {
 
-	public DayRental(Client client, Bike bike) {
-		super(20, client, bike);
+	public DayRental(int id, Client client, Bike bike) {
+		super(id,20, client, bike);
 	}
 
 	@Override

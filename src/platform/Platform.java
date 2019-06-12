@@ -2,7 +2,7 @@ package platform;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
+import java.util.HashMap;
 import java.util.List;
 
 import factories.RentalFactory;
@@ -16,17 +16,19 @@ public class Platform {
 	private static Platform instance;
 	private ArrayList<Bike> bikes;
 	private ArrayList<Client> clients;
-	private ArrayList<Rental> currentRentals;
+	private HashMap<Integer,Rental> rentals;
 	private RentalFactory factory;
 
 	private Platform() {
-		Platform.instance = new Platform();
-		this.factory = new RentalFactory();
+		this.clients=new ArrayList<Client>();
+		this.bikes=new ArrayList<Bike>();
+		this.rentals=new HashMap<Integer, Rental>();
+		this.factory= new RentalFactory();
 	}
 
 	public static Platform getInstance() {
 		if (instance == null) {
-			return new Platform();
+			instance= new Platform();
 		}
 		return instance;
 	}
@@ -36,7 +38,9 @@ public class Platform {
 		if (availableBike == null) {
 			throw new Exception("There is no available bike");
 		}
-		return factory.newRent(rentType, client, availableBike);
+		 Rental rent=factory.newRent(rentals.size(),rentType, client, availableBike);
+		 rentals.put(rent.getId(), rent);
+		 return rent;
 
 	}
 
@@ -86,12 +90,15 @@ public class Platform {
 		this.clients = clients;
 	}
 
-	public ArrayList<Rental> getCurrentRentals() {
-		return currentRentals;
+	public HashMap<Integer, Rental> getRentals() {
+		return rentals;
 	}
 
-	public void setCurrentRentals(ArrayList<Rental> currentRentals) {
-		this.currentRentals = currentRentals;
+	public void setRentals(HashMap<Integer, Rental> currentRentals) {
+		this.rentals = currentRentals;
 	}
 
+	public void newBike() {
+		bikes.add(new Bike(bikes.size()));
+	}
 }

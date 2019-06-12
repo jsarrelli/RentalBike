@@ -2,13 +2,12 @@ package factories;
 
 public enum RentalTypes {
 
-	WEEKLY(1,"Week"), HOURLY(2,"Hour"), DAILY(3,"Day"), FAMILY(4,"Family");
+	WEEKLY("Week"), HOURLY("Hour"), DAILY("Day"), FAMILY("Family");
 	String value;
-	int id;
 
-	private RentalTypes(int id,String value) {
+	private RentalTypes(String value) {
 		this.value = value;
-		this.id =id;
+
 	}
 
 	public String getValue() {
@@ -19,14 +18,4 @@ public enum RentalTypes {
 		this.value = value;
 	}
 
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
-
-	
-	
 }
