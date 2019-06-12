@@ -14,7 +14,9 @@ public class HourRental extends SingleRental {
 
 	@Override
 	public int getPeriod(LocalDateTime finishDate) {
-		return (int) Duration.between(startDate, finishDate).toHours();
+		int period =(int) Duration.between(startDate, finishDate).toHours();
+		log.debug("Period from "+formatDate(startDate)+"to "+ this.formatDate(finishDate)+" is: " + period+" hours");
+		return period;
 
 	}
 

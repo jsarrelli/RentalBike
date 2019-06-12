@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
+import org.apache.log4j.Logger;
+
 import factories.RentalTypes;
 import rentals.FamilyRental;
 import rentals.Promotion;
@@ -14,6 +16,8 @@ public class Menu {
 	public Scanner scanner;
 	public Platform platform;
 	private static Menu instance;
+    private static final Logger LOGGER = Logger.getLogger(Menu.class);
+
 
 	private Menu() {
 		this.scanner = new Scanner(System.in);
@@ -160,6 +164,7 @@ public class Menu {
 		System.out.print("Insert your name: ");
 		String name = scanner.nextLine();
 		platform.addClient(name);
+		LOGGER.debug("Successfully created user. Username :"+name);
 	}
 
 	public void optionsMenu() throws Exception {

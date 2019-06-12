@@ -166,6 +166,42 @@
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_THDRgI1GEemfRI0MbuUd1w" sourceAnchor="298.0,0.0" targetAnchor="283.0,76.0" dashed="true" superClass="_TGa_YI1GEemfRI0MbuUd1w" subClass="_THFGsI1GEemfRI0MbuUd1w">
     <modelElement href="RentalBike.uml#_N6o3AI1GEemfRI0MbuUd1w"/>
   </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_VU62QI1REemfRI0MbuUd1w" source="_TCQ4KY1GEemfRI0MbuUd1w">
+    <modelElement href="RentalBike.uml#_VUXcoI1REemfRI0MbuUd1w"/>
+    <stereotypes xmi:id="_VU62QY1REemfRI0MbuUd1w" name="Reference">
+      <modelElement href="RentalBike.uml#_VUYDsI1REemfRI0MbuUd1w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_VU62Qo1REemfRI0MbuUd1w" text=""/>
+    <sourceRole xmi:id="_VU62Q41REemfRI0MbuUd1w" aggregationKind="NONE" name="">
+      <modelElement href="RentalBike.uml#_VUXcoY1REemfRI0MbuUd1w"/>
+      <visibility xmi:id="_VU62RI1REemfRI0MbuUd1w" label="+"/>
+      <cardinality xmi:id="_VU62RY1REemfRI0MbuUd1w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_VU62Ro1REemfRI0MbuUd1w" aggregationKind="NONE" name="LOGGER" navigable="true">
+      <modelElement href="RentalBike.uml#_VUSkII1REemfRI0MbuUd1w"/>
+      <visibility xmi:id="_VU62R41REemfRI0MbuUd1w" label="-"/>
+      <cardinality xmi:id="_VU62SI1REemfRI0MbuUd1w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_qp490I1TEemfRI0MbuUd1w" source="_TF1JgI1GEemfRI0MbuUd1w">
+    <modelElement href="RentalBike.uml#_qpwa8I1TEemfRI0MbuUd1w"/>
+    <stereotypes xmi:id="_qp490Y1TEemfRI0MbuUd1w" name="Reference">
+      <modelElement href="RentalBike.uml#_qpwa8o1TEemfRI0MbuUd1w"/>
+    </stereotypes>
+    <nameVisual xmi:id="_qp490o1TEemfRI0MbuUd1w" text=""/>
+    <sourceRole xmi:id="_qp49041TEemfRI0MbuUd1w" aggregationKind="NONE" name="">
+      <modelElement href="RentalBike.uml#_qpwa8Y1TEemfRI0MbuUd1w"/>
+      <visibility xmi:id="_qp491I1TEemfRI0MbuUd1w" label="+"/>
+      <cardinality xmi:id="_qp491Y1TEemfRI0MbuUd1w" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_qp491o1TEemfRI0MbuUd1w" aggregationKind="NONE" name="log" navigable="true">
+      <modelElement href="RentalBike.uml#_qpt-sI1TEemfRI0MbuUd1w"/>
+      <stereotypes xmi:id="_qp6zAI1TEemfRI0MbuUd1w" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_ahdFMI1UEemfRI0MbuUd1w" name="LegacyStyledElement"/>
+      <visibility xmi:id="_qp49141TEemfRI0MbuUd1w" label="#"/>
+      <cardinality xmi:id="_qp492I1TEemfRI0MbuUd1w" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
   <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_TBPkcI1GEemfRI0MbuUd1w" name="Main">
     <modelElement href="RentalBike.uml#_N4KKwI1GEemfRI0MbuUd1w"/>
     <visualProperties xmi:id="_TBQLgI1GEemfRI0MbuUd1w" position="1043.0,1467.0" size="-1.0,-1.0"/>
@@ -871,7 +907,7 @@
       </parameters>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_TCQ4KY1GEemfRI0MbuUd1w" name="Menu" associationsIn="_TB_LUI1GEemfRI0MbuUd1w" associationsOut="_TB_LUI1GEemfRI0MbuUd1w _TCQREI1GEemfRI0MbuUd1w _TCQ4II1GEemfRI0MbuUd1w">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_TCQ4KY1GEemfRI0MbuUd1w" name="Menu" associationsIn="_TB_LUI1GEemfRI0MbuUd1w" associationsOut="_TB_LUI1GEemfRI0MbuUd1w _TCQREI1GEemfRI0MbuUd1w _TCQ4II1GEemfRI0MbuUd1w _VU62QI1REemfRI0MbuUd1w">
     <modelElement href="RentalBike.uml#_N4p6AI1GEemfRI0MbuUd1w"/>
     <visualProperties xmi:id="_TCQ4Ko1GEemfRI0MbuUd1w" position="13.0,1051.0" size="-1.0,-1.0"/>
     <visibility xmi:id="_TCQ4K41GEemfRI0MbuUd1w" label="+"/>
@@ -906,6 +942,14 @@
       <cardinality xmi:id="_TCQ4OY1GEemfRI0MbuUd1w" label="1" max="1" min="1"/>
       <type xmi:id="_TCQ4Oo1GEemfRI0MbuUd1w" name="Menu">
         <modelElement href="RentalBike.uml#_N4p6AI1GEemfRI0MbuUd1w"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_VUeKUI1REemfRI0MbuUd1w" defaultValue="Logger.getLogger(Menu.class)" name="LOGGER" staticAttribute="true">
+      <modelElement href="RentalBike.uml#_VUSkII1REemfRI0MbuUd1w"/>
+      <visibility xmi:id="_VUeKUY1REemfRI0MbuUd1w" label="-"/>
+      <cardinality xmi:id="_VUeKUo1REemfRI0MbuUd1w" label="1" max="1" min="1"/>
+      <type xmi:id="_VUeKU41REemfRI0MbuUd1w" name="Logger">
+        <modelElement href="RentalBike.uml#_VUQu8I1REemfRI0MbuUd1w"/>
       </type>
     </attributes>
     <operations xmi:id="_TCQ4O41GEemfRI0MbuUd1w" name="Menu">
@@ -1025,7 +1069,7 @@
       </parameters>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_TF1JgI1GEemfRI0MbuUd1w" name="SingleRental" abstractClass="true" associationsOut="_TE0c4I1GEemfRI0MbuUd1w _TE2SEI1GEemfRI0MbuUd1w _TFekMI1GEemfRI0MbuUd1w" generalizations="_TFOskI1GEemfRI0MbuUd1w" subclassedBy="_TFOskY1GEemfRI0MbuUd1w _TFQhwI1GEemfRI0MbuUd1w _TFd9II1GEemfRI0MbuUd1w">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_TF1JgI1GEemfRI0MbuUd1w" name="SingleRental" abstractClass="true" associationsOut="_TE0c4I1GEemfRI0MbuUd1w _TE2SEI1GEemfRI0MbuUd1w _TFekMI1GEemfRI0MbuUd1w _qp490I1TEemfRI0MbuUd1w" generalizations="_TFOskI1GEemfRI0MbuUd1w" subclassedBy="_TFOskY1GEemfRI0MbuUd1w _TFQhwI1GEemfRI0MbuUd1w _TFd9II1GEemfRI0MbuUd1w">
     <modelElement href="RentalBike.uml#_N4gwEI1GEemfRI0MbuUd1w"/>
     <visualProperties xmi:id="_TF1JgY1GEemfRI0MbuUd1w" position="434.0,212.0" size="-1.0,-1.0"/>
     <visibility xmi:id="_TF1Jgo1GEemfRI0MbuUd1w" label="+"/>
@@ -1082,6 +1126,17 @@
       <cardinality xmi:id="_TF1Jmo1GEemfRI0MbuUd1w" label="1" max="1" min="1"/>
       <type xmi:id="_TF1Jm41GEemfRI0MbuUd1w" name="int">
         <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_qpxpEI1TEemfRI0MbuUd1w" name="log">
+      <modelElement href="RentalBike.uml#_qpt-sI1TEemfRI0MbuUd1w"/>
+      <stereotypes xmi:id="_qpxpEY1TEemfRI0MbuUd1w" name="LegacyStyledElement">
+        <modelElement href="RentalBike.uml#_qpulwY1TEemfRI0MbuUd1w"/>
+      </stereotypes>
+      <visibility xmi:id="_qpxpEo1TEemfRI0MbuUd1w" label="#"/>
+      <cardinality xmi:id="_qpxpE41TEemfRI0MbuUd1w" label="1" max="1" min="1"/>
+      <type xmi:id="_qpxpFI1TEemfRI0MbuUd1w" name="Logger">
+        <modelElement href="RentalBike.uml#_VUQu8I1REemfRI0MbuUd1w"/>
       </type>
     </attributes>
     <operations xmi:id="_TF1JnI1GEemfRI0MbuUd1w" name="getActualCharge">
@@ -1282,6 +1337,24 @@
         <modelElement href="RentalBike.uml#_N7X20Y1GEemfRI0MbuUd1w"/>
         <cardinality xmi:id="_TF1J-I1GEemfRI0MbuUd1w" label="1" max="1" min="1"/>
         <type xmi:id="_TF1J-Y1GEemfRI0MbuUd1w" name="LocalDateTime">
+          <modelElement href="RentalBike.uml#_N6wLwY1GEemfRI0MbuUd1w"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_GO4ucI1VEemfRI0MbuUd1w" name="formatDate">
+      <modelElement href="RentalBike.uml#_GOzO4I1VEemfRI0MbuUd1w"/>
+      <visibility xmi:id="_GO4ucY1VEemfRI0MbuUd1w" label="#"/>
+      <cardinality xmi:id="_GO4uco1VEemfRI0MbuUd1w" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_GO4uc41VEemfRI0MbuUd1w">
+        <modelElement href="RentalBike.uml#_GO1rII1VEemfRI0MbuUd1w"/>
+        <type xmi:id="_GO4udI1VEemfRI0MbuUd1w" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_GO4udY1VEemfRI0MbuUd1w" name="date">
+        <modelElement href="RentalBike.uml#_GOz18I1VEemfRI0MbuUd1w"/>
+        <cardinality xmi:id="_GO4udo1VEemfRI0MbuUd1w" label="1" max="1" min="1"/>
+        <type xmi:id="_GO4ud41VEemfRI0MbuUd1w" name="LocalDateTime">
           <modelElement href="RentalBike.uml#_N6wLwY1GEemfRI0MbuUd1w"/>
         </type>
       </parameters>

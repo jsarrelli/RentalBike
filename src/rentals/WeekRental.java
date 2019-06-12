@@ -14,7 +14,10 @@ public class WeekRental extends SingleRental {
 
 	@Override
 	public int getPeriod(LocalDateTime finishDate) {
-		return (int) Math.ceil(Duration.between(startDate, finishDate).toDays() / 7);
+		int period = (int) Math.ceil(Duration.between(startDate, finishDate).toDays() / 7);
+		log.debug("Period from " + formatDate(startDate) + "to " + this.formatDate(finishDate) + " is: " + period
+				+ " weeks");
+		return period;
 
 	}
 

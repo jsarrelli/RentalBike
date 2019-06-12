@@ -1,11 +1,15 @@
 package rentals;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+import org.apache.log4j.Logger;
 
 import platform.Bike;
 import platform.Client;
 
 public abstract class SingleRental implements Rental {
+	protected Logger log;
 	protected int rate;
 	protected LocalDateTime startDate;
 	protected Client client;
@@ -19,6 +23,7 @@ public abstract class SingleRental implements Rental {
 		this.client = client;
 		this.bike = bike;
 		this.id = id;
+		this.log = Logger.getLogger(this.getClass());
 	}
 
 	public float getActualCharge() {
@@ -30,7 +35,9 @@ public abstract class SingleRental implements Rental {
 		if (period == 0) {
 			period = 1;
 		}
-		return rate * period;
+		float result = rate * period;
+		log.debug("Charge from: " + formatDate(startDate) + " to " + formatDate(estimatedDate)+ " is $" + result);
+		return result;
 	}
 
 	public int getRate() {
@@ -71,6 +78,11 @@ public abstract class SingleRental implements Rental {
 
 	public void setId(int id) {
 		this.id = id;
+	}
+
+	protected String formatDate(LocalDateTime date) {
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
+		return date.format(formatter);
 	}
 
 	public abstract int getPeriod(LocalDateTime finishDate);

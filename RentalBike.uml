@@ -4,7 +4,7 @@
     <eAnnotations xmi:id="_Nl1EoI1GEemfRI0MbuUd1w" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_Nl1EoY1GEemfRI0MbuUd1w" source="codegen">
         <details xmi:id="_Nl1Eoo1GEemfRI0MbuUd1w" key="codegenDirectory" value="/RentalBike/src"/>
-        <details xmi:id="_Rnm4AI1GEemfRI0MbuUd1w" key="AssociatedSourceCode" value="/RentalBike/src/factories/AbstractFactory.java;2167550424/1;/RentalBike/src/factories/RentalFactory.java;490854793/1;/RentalBike/src/factories/RentalTypes.java;968902158/1;/RentalBike/src/platform/Bike.java;1500958383/1;/RentalBike/src/platform/Client.java;1834239518/1;/RentalBike/src/platform/Main.java;3195325886/1;/RentalBike/src/rentals/WeekRental.java;2360687971/1;/RentalBike/src/rentals/DayRental.java;1948813638/1;/RentalBike/src/rentals/FamilyRental.java;3593457906/1;/RentalBike/src/rentals/HourRental.java;5989367/1;/RentalBike/src/rentals/Promotion.java;4287550053/1;/RentalBike/src/rentals/Rental.java;184331390/1;/RentalBike/src/rentals/SingleRental.java;4203108817/1;/RentalBike/src/platform/Menu.java;2669533126/1;/RentalBike/src/tests/testCharges.java;3422673864/1;/RentalBike/src/tests/testFamilyRental.java;712023061/1;/RentalBike/src/platform/Platform.java;340916590/0;"/>
+        <details xmi:id="_Rnm4AI1GEemfRI0MbuUd1w" key="AssociatedSourceCode" value="/RentalBike/src/factories/AbstractFactory.java;2167550424/1;/RentalBike/src/factories/RentalFactory.java;490854793/1;/RentalBike/src/factories/RentalTypes.java;968902158/1;/RentalBike/src/platform/Bike.java;2963843307/1;/RentalBike/src/platform/Client.java;1386147139/1;/RentalBike/src/platform/Main.java;3195325886/1;/RentalBike/src/rentals/WeekRental.java;2944997094/1;/RentalBike/src/rentals/DayRental.java;472093922/1;/RentalBike/src/rentals/FamilyRental.java;3593457906/1;/RentalBike/src/rentals/HourRental.java;215936475/1;/RentalBike/src/rentals/Promotion.java;4287550053/1;/RentalBike/src/rentals/Rental.java;2718525882/1;/RentalBike/src/rentals/SingleRental.java;1169783674/1;/RentalBike/src/platform/Menu.java;3358238385/1;/RentalBike/src/tests/testCharges.java;3422673864/1;/RentalBike/src/tests/testFamilyRental.java;712023061/1;/RentalBike/src/platform/Platform.java;3130529389/0;"/>
       </contents>
     </eAnnotations>
     <elementImport xmi:id="_N2rkEI1GEemfRI0MbuUd1w">
@@ -46,14 +46,17 @@
           <ownedParameter xmi:id="_N7xfdY1GEemfRI0MbuUd1w" name="id">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
           </ownedParameter>
-          <ownedParameter xmi:id="_N7xfdo1GEemfRI0MbuUd1w" type="_N4EEII1GEemfRI0MbuUd1w" direction="return"/>
+          <ownedParameter xmi:id="_N7xfdo1GEemfRI0MbuUd1w" type="_N4EEII1GEemfRI0MbuUd1w" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
           <language>java</language>
-          <body>this.idBike=id;
+          <body>this.idBike = id;
 		isRented = false;
 	</body>
         </ownedBehavior>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N7yGgI1GEemfRI0MbuUd1w" name="isRented" specification="_N4GgYI1GEemfRI0MbuUd1w">
           <ownedParameter xmi:id="_N7yGgY1GEemfRI0MbuUd1w" direction="return">
+            <name xsi:nil="true"/>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
           </ownedParameter>
           <language>java</language>
@@ -96,7 +99,9 @@
           <ownedParameter xmi:id="_N7yGhY1GEemfRI0MbuUd1w" name="name">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedParameter>
-          <ownedParameter xmi:id="_N7yGho1GEemfRI0MbuUd1w" type="_N4IVkI1GEemfRI0MbuUd1w" direction="return"/>
+          <ownedParameter xmi:id="_N7yGho1GEemfRI0MbuUd1w" type="_N4IVkI1GEemfRI0MbuUd1w" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
           <language>java</language>
           <body>super();
 		this.name = name;
@@ -142,8 +147,13 @@
         <ownedAttribute xmi:id="_N7jdAI1GEemfRI0MbuUd1w" name="scanner" type="_N7AqcI1GEemfRI0MbuUd1w" association="_N8BXEY1GEemfRI0MbuUd1w"/>
         <ownedAttribute xmi:id="_N7kEEY1GEemfRI0MbuUd1w" name="platform" type="_N7Yd4I1GEemfRI0MbuUd1w" association="_N8B-IY1GEemfRI0MbuUd1w"/>
         <ownedAttribute xmi:id="_N7kEE41GEemfRI0MbuUd1w" name="instance" isStatic="true" type="_N4p6AI1GEemfRI0MbuUd1w" isReadOnly="true" association="_N8ClMY1GEemfRI0MbuUd1w"/>
+        <ownedAttribute xmi:id="_VUSkII1REemfRI0MbuUd1w" name="LOGGER" visibility="private" isLeaf="true" isStatic="true" type="_VUQu8I1REemfRI0MbuUd1w" isReadOnly="true" association="_VUXcoI1REemfRI0MbuUd1w">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_VUWOgI1REemfRI0MbuUd1w" value="Logger.getLogger(Menu.class)"/>
+        </ownedAttribute>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N72_Ao1GEemfRI0MbuUd1w" name="Menu" specification="_N4rIII1GEemfRI0MbuUd1w">
-          <ownedParameter xmi:id="_N72_A41GEemfRI0MbuUd1w" type="_N4p6AI1GEemfRI0MbuUd1w" direction="return"/>
+          <ownedParameter xmi:id="_N72_A41GEemfRI0MbuUd1w" type="_N4p6AI1GEemfRI0MbuUd1w" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
           <language>java</language>
           <body>this.scanner = new Scanner(System.in);
 		this.platform = Platform.getInstance();
@@ -183,7 +193,9 @@
 	</body>
         </ownedBehavior>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N72_B41GEemfRI0MbuUd1w" name="askForDate" specification="_N4sWQY1GEemfRI0MbuUd1w">
-          <ownedParameter xmi:id="_N72_CI1GEemfRI0MbuUd1w" type="_N6wLwY1GEemfRI0MbuUd1w" direction="return"/>
+          <ownedParameter xmi:id="_N72_CI1GEemfRI0MbuUd1w" type="_N6wLwY1GEemfRI0MbuUd1w" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
           <language>java</language>
           <body>System.out.print(&quot;Insert estimated date (YYYY-mm-dd): &quot;);
 		String stringDate = scanner.nextLine();
@@ -201,7 +213,9 @@
 	</body>
         </ownedBehavior>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N73mEI1GEemfRI0MbuUd1w" name="askForRentalId" specification="_N4s9UY1GEemfRI0MbuUd1w">
-          <ownedParameter xmi:id="_N73mEY1GEemfRI0MbuUd1w" type="_N4e64I1GEemfRI0MbuUd1w" direction="return"/>
+          <ownedParameter xmi:id="_N73mEY1GEemfRI0MbuUd1w" type="_N4e64I1GEemfRI0MbuUd1w" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
           <language>java</language>
           <body>System.out.print(&quot;Search rental by id: &quot;);
 		int id = 0;
@@ -251,7 +265,9 @@
 	</body>
         </ownedBehavior>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N73mFY1GEemfRI0MbuUd1w" name="askForRental" specification="_N4tkYY1GEemfRI0MbuUd1w">
-          <ownedParameter xmi:id="_N73mFo1GEemfRI0MbuUd1w" type="_N4e64I1GEemfRI0MbuUd1w" direction="return"/>
+          <ownedParameter xmi:id="_N73mFo1GEemfRI0MbuUd1w" type="_N4e64I1GEemfRI0MbuUd1w" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
           <language>java</language>
           <body>RentalTypes rentType = askForRentalType();
 		Client client = askForClientName();
@@ -259,7 +275,9 @@
 	</body>
         </ownedBehavior>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N73mF41GEemfRI0MbuUd1w" name="askForRentalType" specification="_N4uLcI1GEemfRI0MbuUd1w">
-          <ownedParameter xmi:id="_N73mGI1GEemfRI0MbuUd1w" type="_N36TII1GEemfRI0MbuUd1w" direction="return"/>
+          <ownedParameter xmi:id="_N73mGI1GEemfRI0MbuUd1w" type="_N36TII1GEemfRI0MbuUd1w" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
           <language>java</language>
           <body>RentalTypes rentType;
 		ArrayList&lt;RentalTypes> rentTypes = new ArrayList&lt;RentalTypes>(Arrays.asList(RentalTypes.values()));
@@ -279,7 +297,9 @@
 	</body>
         </ownedBehavior>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N73mGY1GEemfRI0MbuUd1w" name="askForClientName" specification="_N4vZkI1GEemfRI0MbuUd1w">
-          <ownedParameter xmi:id="_N73mGo1GEemfRI0MbuUd1w" type="_N4IVkI1GEemfRI0MbuUd1w" direction="return"/>
+          <ownedParameter xmi:id="_N73mGo1GEemfRI0MbuUd1w" type="_N4IVkI1GEemfRI0MbuUd1w" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
           <language>java</language>
           <body>Platform plataform = Platform.getInstance();
 		Client client;
@@ -300,6 +320,7 @@
           <body>System.out.print(&quot;Insert your name: &quot;);
 		String name = scanner.nextLine();
 		platform.addClient(name);
+		LOGGER.debug(&quot;Successfully created user. Username :&quot;+name);
 	</body>
         </ownedBehavior>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N73mHI1GEemfRI0MbuUd1w" name="optionsMenu" specification="_N4wAoI1GEemfRI0MbuUd1w">
@@ -363,6 +384,9 @@
       <packagedElement xmi:type="uml:Association" xmi:id="_N8ClMY1GEemfRI0MbuUd1w" name="" memberEnd="_N8ClMo1GEemfRI0MbuUd1w _N7kEE41GEemfRI0MbuUd1w">
         <ownedEnd xmi:id="_N8ClMo1GEemfRI0MbuUd1w" name="" type="_N4p6AI1GEemfRI0MbuUd1w" association="_N8ClMY1GEemfRI0MbuUd1w"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_VUXcoI1REemfRI0MbuUd1w" name="" memberEnd="_VUXcoY1REemfRI0MbuUd1w _VUSkII1REemfRI0MbuUd1w">
+        <ownedEnd xmi:id="_VUXcoY1REemfRI0MbuUd1w" name="" type="_N4p6AI1GEemfRI0MbuUd1w" association="_VUXcoI1REemfRI0MbuUd1w"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_N2xqsI1GEemfRI0MbuUd1w" name="rentals">
       <packagedElement xmi:type="uml:Class" xmi:id="_N4MnAI1GEemfRI0MbuUd1w" name="WeekRental">
@@ -373,18 +397,24 @@
           </ownedParameter>
           <ownedParameter xmi:id="_N7ytlY1GEemfRI0MbuUd1w" name="client" type="_N4IVkI1GEemfRI0MbuUd1w"/>
           <ownedParameter xmi:id="_N7ytlo1GEemfRI0MbuUd1w" name="bike" type="_N4EEII1GEemfRI0MbuUd1w"/>
-          <ownedParameter xmi:id="_N7ytl41GEemfRI0MbuUd1w" type="_N4MnAI1GEemfRI0MbuUd1w" direction="return"/>
+          <ownedParameter xmi:id="_N7ytl41GEemfRI0MbuUd1w" type="_N4MnAI1GEemfRI0MbuUd1w" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
           <language>java</language>
-          <body>super(id,60, client, bike);
+          <body>super(id, 60, client, bike);
 	</body>
         </ownedBehavior>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N7ytmI1GEemfRI0MbuUd1w" name="getPeriod" specification="_N7NewI1GEemfRI0MbuUd1w">
           <ownedParameter xmi:id="_N7ytmY1GEemfRI0MbuUd1w" name="finishDate" type="_N6wLwY1GEemfRI0MbuUd1w"/>
           <ownedParameter xmi:id="_N7ytmo1GEemfRI0MbuUd1w" direction="return">
+            <name xsi:nil="true"/>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
           </ownedParameter>
           <language>java</language>
-          <body>return (int) Math.ceil(Duration.between(startDate, finishDate).toDays()/7);
+          <body>int period = (int) Math.ceil(Duration.between(startDate, finishDate).toDays() / 7);
+		log.debug(&quot;Period from &quot; + formatDate(startDate) + &quot;to &quot; + this.formatDate(finishDate) + &quot; is: &quot; + period
+				+ &quot; weeks&quot;);
+		return period;
 
 	</body>
         </ownedBehavior>
@@ -414,18 +444,24 @@
           </ownedParameter>
           <ownedParameter xmi:id="_N7zUoo1GEemfRI0MbuUd1w" name="client" type="_N4IVkI1GEemfRI0MbuUd1w"/>
           <ownedParameter xmi:id="_N7zUo41GEemfRI0MbuUd1w" name="bike" type="_N4EEII1GEemfRI0MbuUd1w"/>
-          <ownedParameter xmi:id="_N7zUpI1GEemfRI0MbuUd1w" type="_N4PqUI1GEemfRI0MbuUd1w" direction="return"/>
+          <ownedParameter xmi:id="_N7zUpI1GEemfRI0MbuUd1w" type="_N4PqUI1GEemfRI0MbuUd1w" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
           <language>java</language>
-          <body>super(id,20, client, bike);
+          <body>super(id, 20, client, bike);
 	</body>
         </ownedBehavior>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N7zUpY1GEemfRI0MbuUd1w" name="getPeriod" specification="_N7PT8I1GEemfRI0MbuUd1w">
           <ownedParameter xmi:id="_N7zUpo1GEemfRI0MbuUd1w" name="finishDate" type="_N6wLwY1GEemfRI0MbuUd1w"/>
           <ownedParameter xmi:id="_N7zUp41GEemfRI0MbuUd1w" direction="return">
+            <name xsi:nil="true"/>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
           </ownedParameter>
           <language>java</language>
-          <body>return (int) Duration.between(startDate, finishDate).toDays();
+          <body>int period = (int) Duration.between(startDate, finishDate).toDays();
+		log.debug(&quot;Period from &quot; + formatDate(startDate) + &quot;to &quot; + this.formatDate(finishDate) + &quot; is: &quot; + period
+				+ &quot; weeks&quot;);
+		return period;
 	</body>
         </ownedBehavior>
         <ownedOperation xmi:id="_N6z2II1GEemfRI0MbuUd1w" name="DayRental" method="_N7zUoI1GEemfRI0MbuUd1w">
@@ -456,7 +492,9 @@
           <ownedParameter xmi:id="_N7z7so1GEemfRI0MbuUd1w" name="id">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
           </ownedParameter>
-          <ownedParameter xmi:id="_N7z7s41GEemfRI0MbuUd1w" type="_N4TUsI1GEemfRI0MbuUd1w" direction="return"/>
+          <ownedParameter xmi:id="_N7z7s41GEemfRI0MbuUd1w" type="_N4TUsI1GEemfRI0MbuUd1w" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
           <language>java</language>
           <body>super();
 		this.id = id;
@@ -466,6 +504,7 @@
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N7z7tI1GEemfRI0MbuUd1w" name="getEstimatedCharge" specification="_N7QiEI1GEemfRI0MbuUd1w">
           <ownedParameter xmi:id="_N7z7tY1GEemfRI0MbuUd1w" name="estimatedDate" type="_N6wLwY1GEemfRI0MbuUd1w"/>
           <ownedParameter xmi:id="_N7z7to1GEemfRI0MbuUd1w" direction="return">
+            <name xsi:nil="true"/>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
           </ownedParameter>
           <language>java</language>
@@ -475,6 +514,7 @@
         </ownedBehavior>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N7z7t41GEemfRI0MbuUd1w" name="getActualCharge" specification="_N4Vw8I1GEemfRI0MbuUd1w">
           <ownedParameter xmi:id="_N7z7uI1GEemfRI0MbuUd1w" direction="return">
+            <name xsi:nil="true"/>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
           </ownedParameter>
           <language>java</language>
@@ -494,6 +534,7 @@
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N7z7u41GEemfRI0MbuUd1w" name="validateTypesOfRentals" specification="_N7S-UI1GEemfRI0MbuUd1w">
           <ownedParameter xmi:id="_N7z7vI1GEemfRI0MbuUd1w" name="associateRentals" type="_N61rUI1GEemfRI0MbuUd1w"/>
           <ownedParameter xmi:id="_N7z7vY1GEemfRI0MbuUd1w" direction="return">
+            <name xsi:nil="true"/>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
           </ownedParameter>
           <language>java</language>
@@ -503,6 +544,7 @@
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N70iwI1GEemfRI0MbuUd1w" name="validateNumberOfAssociateRentals" specification="_N7TlYY1GEemfRI0MbuUd1w">
           <ownedParameter xmi:id="_N70iwY1GEemfRI0MbuUd1w" name="associateRentals" type="_N61rUI1GEemfRI0MbuUd1w"/>
           <ownedParameter xmi:id="_N70iwo1GEemfRI0MbuUd1w" direction="return">
+            <name xsi:nil="true"/>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
           </ownedParameter>
           <language>java</language>
@@ -553,7 +595,9 @@
           </ownedParameter>
           <ownedParameter xmi:id="_N70ixY1GEemfRI0MbuUd1w" name="client" type="_N4IVkI1GEemfRI0MbuUd1w"/>
           <ownedParameter xmi:id="_N70ixo1GEemfRI0MbuUd1w" name="bike" type="_N4EEII1GEemfRI0MbuUd1w"/>
-          <ownedParameter xmi:id="_N70ix41GEemfRI0MbuUd1w" type="_N4b3kI1GEemfRI0MbuUd1w" direction="return"/>
+          <ownedParameter xmi:id="_N70ix41GEemfRI0MbuUd1w" type="_N4b3kI1GEemfRI0MbuUd1w" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
           <language>java</language>
           <body>super(id, 5, client, bike);
 	</body>
@@ -561,11 +605,14 @@
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N70iyI1GEemfRI0MbuUd1w" name="getPeriod" specification="_N7VakI1GEemfRI0MbuUd1w">
           <ownedParameter xmi:id="_N70iyY1GEemfRI0MbuUd1w" name="finishDate" type="_N6wLwY1GEemfRI0MbuUd1w"/>
           <ownedParameter xmi:id="_N70iyo1GEemfRI0MbuUd1w" direction="return">
+            <name xsi:nil="true"/>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
           </ownedParameter>
           <language>java</language>
-          <body>return (int) Duration.between(startDate, finishDate).toHours();
-		
+          <body>int period =(int) Duration.between(startDate, finishDate).toHours();
+		log.debug(&quot;Period from &quot;+formatDate(startDate)+&quot;to &quot;+ this.formatDate(finishDate)+&quot; is: &quot; + period+&quot; hours&quot;);
+		return period;
+
 	</body>
         </ownedBehavior>
         <ownedOperation xmi:id="_N64uoI1GEemfRI0MbuUd1w" name="HourRental" method="_N70iw41GEemfRI0MbuUd1w">
@@ -613,6 +660,11 @@
         <ownedAttribute xmi:id="_N7i18o1GEemfRI0MbuUd1w" name="id" visibility="protected">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
         </ownedAttribute>
+        <ownedAttribute xmi:id="_qpt-sI1TEemfRI0MbuUd1w" name="log" visibility="protected" type="_VUQu8I1REemfRI0MbuUd1w" association="_qpwa8I1TEemfRI0MbuUd1w">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qpulwI1TEemfRI0MbuUd1w">
+            <value xsi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
         <interfaceRealization xmi:id="_N67K4I1GEemfRI0MbuUd1w" client="_N4gwEI1GEemfRI0MbuUd1w" supplier="_N4e64I1GEemfRI0MbuUd1w" contract="_N4e64I1GEemfRI0MbuUd1w"/>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N71J0I1GEemfRI0MbuUd1w" name="SingleRental" specification="_N67x8I1GEemfRI0MbuUd1w">
           <ownedParameter xmi:id="_N71J0Y1GEemfRI0MbuUd1w" name="id">
@@ -623,7 +675,9 @@
           </ownedParameter>
           <ownedParameter xmi:id="_N71J041GEemfRI0MbuUd1w" name="client" type="_N4IVkI1GEemfRI0MbuUd1w"/>
           <ownedParameter xmi:id="_N71J1I1GEemfRI0MbuUd1w" name="bike" type="_N4EEII1GEemfRI0MbuUd1w"/>
-          <ownedParameter xmi:id="_N71J1Y1GEemfRI0MbuUd1w" type="_N4gwEI1GEemfRI0MbuUd1w" direction="return"/>
+          <ownedParameter xmi:id="_N71J1Y1GEemfRI0MbuUd1w" type="_N4gwEI1GEemfRI0MbuUd1w" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
           <language>java</language>
           <body>super();
 		this.startDate = LocalDateTime.now();
@@ -631,10 +685,12 @@
 		this.client = client;
 		this.bike = bike;
 		this.id = id;
+		this.log = Logger.getLogger(this.getClass());
 	</body>
         </ownedBehavior>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N71J1o1GEemfRI0MbuUd1w" name="getActualCharge" specification="_N4h-MI1GEemfRI0MbuUd1w">
           <ownedParameter xmi:id="_N71J141GEemfRI0MbuUd1w" direction="return">
+            <name xsi:nil="true"/>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
           </ownedParameter>
           <language>java</language>
@@ -644,6 +700,7 @@
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N71J2I1GEemfRI0MbuUd1w" name="getEstimatedCharge" specification="_N7XPwI1GEemfRI0MbuUd1w">
           <ownedParameter xmi:id="_N71J2Y1GEemfRI0MbuUd1w" name="estimatedDate" type="_N6wLwY1GEemfRI0MbuUd1w"/>
           <ownedParameter xmi:id="_N71J2o1GEemfRI0MbuUd1w" direction="return">
+            <name xsi:nil="true"/>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
           </ownedParameter>
           <language>java</language>
@@ -651,11 +708,14 @@
 		if (period == 0) {
 			period = 1;
 		}
-		return rate * period;
+		float result = rate * period;
+		log.debug(&quot;Charge from: &quot; + formatDate(startDate) + &quot; to &quot; + formatDate(estimatedDate)+ &quot; is $&quot; + result);
+		return result;
 	</body>
         </ownedBehavior>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N71w4I1GEemfRI0MbuUd1w" name="getRate" specification="_N4jMUI1GEemfRI0MbuUd1w">
           <ownedParameter xmi:id="_N71w4Y1GEemfRI0MbuUd1w" direction="return">
+            <name xsi:nil="true"/>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
           </ownedParameter>
           <language>java</language>
@@ -671,7 +731,9 @@
 	</body>
         </ownedBehavior>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N71w5I1GEemfRI0MbuUd1w" name="getStartDate" specification="_N4jzYY1GEemfRI0MbuUd1w">
-          <ownedParameter xmi:id="_N71w5Y1GEemfRI0MbuUd1w" type="_N6wLwY1GEemfRI0MbuUd1w" direction="return"/>
+          <ownedParameter xmi:id="_N71w5Y1GEemfRI0MbuUd1w" type="_N6wLwY1GEemfRI0MbuUd1w" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
           <language>java</language>
           <body>return startDate;
 	</body>
@@ -683,7 +745,9 @@
 	</body>
         </ownedBehavior>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N71w6I1GEemfRI0MbuUd1w" name="getClient" specification="_N4kacI1GEemfRI0MbuUd1w">
-          <ownedParameter xmi:id="_N71w6Y1GEemfRI0MbuUd1w" type="_N4IVkI1GEemfRI0MbuUd1w" direction="return"/>
+          <ownedParameter xmi:id="_N71w6Y1GEemfRI0MbuUd1w" type="_N4IVkI1GEemfRI0MbuUd1w" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
           <language>java</language>
           <body>return client;
 	</body>
@@ -695,7 +759,9 @@
 	</body>
         </ownedBehavior>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N72X8I1GEemfRI0MbuUd1w" name="getBike" specification="_N4kacY1GEemfRI0MbuUd1w">
-          <ownedParameter xmi:id="_N72X8Y1GEemfRI0MbuUd1w" type="_N4EEII1GEemfRI0MbuUd1w" direction="return"/>
+          <ownedParameter xmi:id="_N72X8Y1GEemfRI0MbuUd1w" type="_N4EEII1GEemfRI0MbuUd1w" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
           <language>java</language>
           <body>return bike;
 	</body>
@@ -708,6 +774,7 @@
         </ownedBehavior>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N72X9I1GEemfRI0MbuUd1w" name="getId" specification="_N4lBgI1GEemfRI0MbuUd1w">
           <ownedParameter xmi:id="_N72X9Y1GEemfRI0MbuUd1w" direction="return">
+            <name xsi:nil="true"/>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
           </ownedParameter>
           <language>java</language>
@@ -720,6 +787,17 @@
           </ownedParameter>
           <language>java</language>
           <body>this.id = id;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_GO25QI1VEemfRI0MbuUd1w" name="formatDate" specification="_GOzO4I1VEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_GO25QY1VEemfRI0MbuUd1w" name="date" type="_N6wLwY1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_GO25Qo1VEemfRI0MbuUd1w" direction="return">
+            <name xsi:nil="true"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>DateTimeFormatter formatter = DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd HH:mm&quot;);
+		return date.format(formatter);
 	</body>
         </ownedBehavior>
         <ownedOperation xmi:id="_N4h-MI1GEemfRI0MbuUd1w" name="getActualCharge" method="_N71J1o1GEemfRI0MbuUd1w">
@@ -791,6 +869,12 @@
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
           </ownedParameter>
         </ownedOperation>
+        <ownedOperation xmi:id="_GOzO4I1VEemfRI0MbuUd1w" name="formatDate" visibility="protected" method="_GO25QI1VEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_GOz18I1VEemfRI0MbuUd1w" name="date" type="_N6wLwY1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_GO1rII1VEemfRI0MbuUd1w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_N7-60I1GEemfRI0MbuUd1w" name="" memberEnd="_N7-60Y1GEemfRI0MbuUd1w _N7fyoo1GEemfRI0MbuUd1w">
         <ownedEnd xmi:id="_N7-60Y1GEemfRI0MbuUd1w" name="" type="_N4TUsI1GEemfRI0MbuUd1w" association="_N7-60I1GEemfRI0MbuUd1w"/>
@@ -803,6 +887,9 @@
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_N8AwA41GEemfRI0MbuUd1w" name="" memberEnd="_N8AwBI1GEemfRI0MbuUd1w _N7i18I1GEemfRI0MbuUd1w">
         <ownedEnd xmi:id="_N8AwBI1GEemfRI0MbuUd1w" name="" type="_N4gwEI1GEemfRI0MbuUd1w" association="_N8AwA41GEemfRI0MbuUd1w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_qpwa8I1TEemfRI0MbuUd1w" name="" memberEnd="_qpwa8Y1TEemfRI0MbuUd1w _qpt-sI1TEemfRI0MbuUd1w">
+        <ownedEnd xmi:id="_qpwa8Y1TEemfRI0MbuUd1w" name="" type="_N4gwEI1GEemfRI0MbuUd1w" association="_qpwa8I1TEemfRI0MbuUd1w"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_N20uAI1GEemfRI0MbuUd1w" name="factories">
@@ -900,6 +987,9 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_N3NIgI1GEemfRI0MbuUd1w" name="java">
       <packagedElement xmi:type="uml:Package" xmi:id="_N3NIgY1GEemfRI0MbuUd1w" name="time">
+        <packagedElement xmi:type="uml:Package" xmi:id="_yrVPQI1UEemfRI0MbuUd1w" name="format">
+          <packagedElement xmi:type="uml:Class" xmi:id="_yrbV4I1UEemfRI0MbuUd1w" name="DateTimeFormatter"/>
+        </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_N6u9oI1GEemfRI0MbuUd1w" name="Duration"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_N6wLwY1GEemfRI0MbuUd1w" name="LocalDateTime"/>
       </packagedElement>
@@ -919,6 +1009,11 @@
             <packagedElement xmi:type="uml:Class" xmi:id="_N7E74I1GEemfRI0MbuUd1w" name="Assertions"/>
             <packagedElement xmi:type="uml:Interface" xmi:id="_N7GKAY1GEemfRI0MbuUd1w" name="Test"/>
           </packagedElement>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_VUFv0I1REemfRI0MbuUd1w" name="apache">
+        <packagedElement xmi:type="uml:Package" xmi:id="_VUGW4I1REemfRI0MbuUd1w" name="log4j">
+          <packagedElement xmi:type="uml:Class" xmi:id="_VUQu8I1REemfRI0MbuUd1w" name="Logger"/>
         </packagedElement>
       </packagedElement>
     </packagedElement>
@@ -1188,6 +1283,7 @@
   </uml:OpaqueBehavior>
   <uml:OpaqueBehavior xmi:id="_N7zUqI1GEemfRI0MbuUd1w" name="getId" specification="_N7ekgY1GEemfRI0MbuUd1w">
     <ownedParameter xmi:id="_N7zUqY1GEemfRI0MbuUd1w" direction="return">
+      <name xsi:nil="true"/>
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
     </ownedParameter>
     <language>java</language>
@@ -1203,7 +1299,9 @@
 	</body>
   </uml:OpaqueBehavior>
   <uml:OpaqueBehavior xmi:id="_N72_AI1GEemfRI0MbuUd1w" name="getInstance" specification="_N7krIY1GEemfRI0MbuUd1w">
-    <ownedParameter xmi:id="_N72_AY1GEemfRI0MbuUd1w" type="_N4p6AI1GEemfRI0MbuUd1w" direction="return"/>
+    <ownedParameter xmi:id="_N72_AY1GEemfRI0MbuUd1w" type="_N4p6AI1GEemfRI0MbuUd1w" direction="return">
+      <name xsi:nil="true"/>
+    </ownedParameter>
     <language>java</language>
     <body>if (instance == null) {
 			instance = new Menu();
@@ -1218,4 +1316,9 @@
   <UMLLabProfile:Reference xmi:id="_N8B-II1GEemfRI0MbuUd1w" base_Element="_N8BXEY1GEemfRI0MbuUd1w"/>
   <UMLLabProfile:Reference xmi:id="_N8ClMI1GEemfRI0MbuUd1w" base_Element="_N8B-IY1GEemfRI0MbuUd1w"/>
   <UMLLabProfile:Reference xmi:id="_N8ClM41GEemfRI0MbuUd1w" base_Element="_N8ClMY1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:Reference xmi:id="_VUQu8Y1REemfRI0MbuUd1w" base_Element="_VUQu8I1REemfRI0MbuUd1w"/>
+  <UMLLabProfile:Reference xmi:id="_VUYDsI1REemfRI0MbuUd1w" base_Element="_VUXcoI1REemfRI0MbuUd1w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_qpulwY1TEemfRI0MbuUd1w" base_Element="_qpt-sI1TEemfRI0MbuUd1w"/>
+  <UMLLabProfile:Reference xmi:id="_qpwa8o1TEemfRI0MbuUd1w" base_Element="_qpwa8I1TEemfRI0MbuUd1w"/>
+  <UMLLabProfile:Reference xmi:id="_yrb88I1UEemfRI0MbuUd1w" base_Element="_yrbV4I1UEemfRI0MbuUd1w"/>
 </xmi:XMI>

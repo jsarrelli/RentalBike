@@ -42,7 +42,7 @@ public class FamilyRental extends Promotion {
 	}
 
 	public void addRentals(ArrayList<Rental> associateRentals) throws Exception {
-		if (validateNumberOfAssociateRentals(associateRentals) && validateTypesOfRentals(associateRentals)) {
+		if (validateNumberOfAssociateRentals(associateRentals) && validateTypesOfRentals(associateRentals))  {
 			this.rentals.addAll(associateRentals);
 		} else {
 			throw new Exception("Error! Family Rental accepts 3 to 5 rentals and not inlude another promotions");
@@ -50,8 +50,7 @@ public class FamilyRental extends Promotion {
 	}
 
 	private boolean validateTypesOfRentals(ArrayList<Rental> associateRentals) {
-		return !associateRentals.parallelStream()
-				.anyMatch(rental -> Promotion.class.isAssignableFrom(rental.getClass()));
+		return !associateRentals.parallelStream().anyMatch(rental-> Promotion.class.isAssignableFrom(rental.getClass()));
 	}
 
 	private boolean validateNumberOfAssociateRentals(ArrayList<Rental> associateRentals) {
