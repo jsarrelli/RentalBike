@@ -5,6 +5,8 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
+import org.apache.log4j.Logger;
+
 import factories.RentalFactory;
 import factories.RentalTypes;
 import rentals.DayRental;
@@ -13,6 +15,8 @@ import rentals.Rental;
 import rentals.WeekRental;;
 
 public class Platform {
+	private static final Logger logger = Logger.getLogger(Platform.class);
+
 	private static Platform instance;
 	private ArrayList<Bike> bikes;
 	private ArrayList<Client> clients;
@@ -36,7 +40,9 @@ public class Platform {
 	public Rental newRent(Client client, RentalTypes rentType) throws Exception {
 		Bike availableBike = getAvailableBike();
 		if (availableBike == null) {
+			logger.debug("No available bike");
 			throw new Exception("There is no available bike");
+
 		}
 		Rental rent = factory.newRent(rentals.size(), rentType, client, availableBike);
 		return rent;
@@ -99,5 +105,6 @@ public class Platform {
 
 	public void newBike() {
 		bikes.add(new Bike(bikes.size()));
+		logger.debug("New bike in system");
 	}
 }
