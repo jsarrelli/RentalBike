@@ -15,7 +15,9 @@ public class FamilyRental extends Promotion {
 
 	@Override
 	public float getEstimatedCharge(LocalDateTime estimatedDate) {
-		return (float) rentals.parallelStream().mapToDouble(rental -> rental.getEstimatedCharge(estimatedDate)).sum();
+		float totalCharges = (float) rentals.parallelStream()
+				.mapToDouble(rental -> rental.getEstimatedCharge(estimatedDate)).sum();
+		return applyDiscount(totalCharges);
 
 	}
 
@@ -42,7 +44,7 @@ public class FamilyRental extends Promotion {
 	}
 
 	public void addRentals(ArrayList<Rental> associateRentals) throws Exception {
-		if (validateNumberOfAssociateRentals(associateRentals) && validateTypesOfRentals(associateRentals))  {
+		if (validateNumberOfAssociateRentals(associateRentals) && validateTypesOfRentals(associateRentals)) {
 			this.rentals.addAll(associateRentals);
 		} else {
 			throw new Exception("Error! Family Rental accepts 3 to 5 rentals and not inlude another promotions");
@@ -50,11 +52,15 @@ public class FamilyRental extends Promotion {
 	}
 
 	private boolean validateTypesOfRentals(ArrayList<Rental> associateRentals) {
-		return !associateRentals.parallelStream().anyMatch(rental-> Promotion.class.isAssignableFrom(rental.getClass()));
+		return !associateRentals.parallelStream()
+				.anyMatch(rental -> Promotion.class.isAssignableFrom(rental.getClass()));
 	}
 
 	private boolean validateNumberOfAssociateRentals(ArrayList<Rental> associateRentals) {
 		return associateRentals.size() <= 5 && associateRentals.size() >= 3;
 	}
 
+	float applyDiscount(float input) {
+		return (float) (input*0.7);
+	}
 }

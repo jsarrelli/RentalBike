@@ -4,3 +4,27 @@
 2019-06-12 19:52:29 INFO  Platform:108 - New bike in system
 2019-06-12 19:52:29 INFO  Platform:108 - New bike in system
 2019-06-12 19:52:29 INFO  Platform:108 - New bike in system
+2019-06-12 20:47:14 INFO  WeekRental:18 - Period from 2019-06-12 20:47to 2019-07-10 20:47 is: 4 weeks
+2019-06-12 20:47:14 INFO  WeekRental:39 - Charge from: 2019-06-12 20:47 to 2019-07-10 20:47 is $240.0
+2019-06-12 20:47:14 INFO  DayRental:18 - Period from 2019-06-12 20:47to 2019-06-12 20:47 is: 0 weeks
+2019-06-12 20:47:14 INFO  DayRental:39 - Charge from: 2019-06-12 20:47 to 2019-06-12 20:47 is $20.0
+2019-06-12 20:47:14 INFO  WeekRental:18 - Period from 2019-06-12 20:47to 2019-06-12 20:47 is: 0 weeks
+2019-06-12 20:47:14 INFO  WeekRental:39 - Charge from: 2019-06-12 20:47 to 2019-06-12 20:47 is $60.0
+2019-06-12 20:47:14 INFO  DayRental:18 - Period from 2019-06-12 20:47to 2019-06-21 20:47 is: 9 weeks
+2019-06-12 20:47:14 INFO  DayRental:39 - Charge from: 2019-06-12 20:47 to 2019-06-21 20:47 is $180.0
+2019-06-12 20:47:14 INFO  HourRental:18 - Period from 2019-06-12 20:47to 2019-06-14 07:47at 12:00 is: 35 hours
+2019-06-12 20:47:14 INFO  HourRental:39 - Charge from: 2019-06-12 20:47 to 2019-06-14 07:47 is $175.0
+2019-06-12 20:47:14 INFO  HourRental:18 - Period from 2019-06-12 20:47to 2019-06-12 20:47at 12:00 is: 0 hours
+2019-06-12 20:47:14 INFO  HourRental:39 - Charge from: 2019-06-12 20:47 to 2019-06-12 20:47 is $5.0
+2019-06-12 20:47:14 INFO  HourRental:18 - Period from 2019-06-12 20:47to 2019-06-12 20:47at 12:00 is: 0 hours
+2019-06-12 20:47:14 INFO  WeekRental:18 - Period from 2019-06-12 20:47to 2019-06-12 20:47 is: 0 weeks
+2019-06-12 20:47:14 INFO  WeekRental:39 - Charge from: 2019-06-12 20:47 to 2019-06-12 20:47 is $60.0
+2019-06-12 20:47:14 INFO  DayRental:18 - Period from 2019-06-12 20:47to 2019-06-12 20:47 is: 0 weeks
+2019-06-12 20:47:14 INFO  HourRental:39 - Charge from: 2019-06-12 20:47 to 2019-06-12 20:47 is $5.0
+2019-06-12 20:47:14 INFO  DayRental:39 - Charge from: 2019-06-12 20:47 to 2019-06-12 20:47 is $20.0
+2019-06-12 20:47:14 INFO  HourRental:18 - Period from 2019-06-12 20:47to 2019-09-13 20:47at 12:00 is: 2232 hours
+2019-06-12 20:47:14 INFO  HourRental:39 - Charge from: 2019-06-12 20:47 to 2019-09-13 20:47 is $11160.0
+2019-06-12 20:47:14 INFO  WeekRental:18 - Period from 2019-06-12 20:47to 2019-09-13 20:47 is: 13 weeks
+2019-06-12 20:47:14 INFO  WeekRental:39 - Charge from: 2019-06-12 20:47 to 2019-09-13 20:47 is $780.0
+2019-06-12 20:47:14 INFO  DayRental:18 - Period from 2019-06-12 20:47to 2019-09-13 20:47 is: 93 weeks
+2019-06-12 20:47:14 INFO  DayRental:39 - Charge from: 2019-06-12 20:47 to 2019-09-13 20:47 is $1860.0

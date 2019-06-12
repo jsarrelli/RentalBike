@@ -64,7 +64,7 @@ class testCharges {
 		familyRental.addRentals(associateRentals);
 
 		LocalDateTime estimatedDate = LocalDateTime.now().plusDays(93);
-		int expectedResult = (int) ((93 * 24) * 5 + Math.ceil(93 / 7) * 60 + 93 * 20);
+		float expectedResult =(float) ((float) ((93 * 24) * 5 + Math.ceil(93 / 7) * 60 + 93 * 20) *0.7);
 		assertEquals(expectedResult, familyRental.getEstimatedCharge(estimatedDate));
 	}
 
@@ -78,7 +78,7 @@ class testCharges {
 		familyRental.addRentals(associateRentals);
 
 		LocalDateTime estimatedDate = LocalDateTime.now();
-		assertEquals(5 + 20 + 60, familyRental.getEstimatedCharge(estimatedDate));
+		assertEquals((5 + 20 + 60)*0.7, familyRental.getEstimatedCharge(estimatedDate));
 	}
 
 }
