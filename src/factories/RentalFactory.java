@@ -4,6 +4,7 @@ import platform.Bike;
 import platform.Client;
 import rentals.DayRental;
 import rentals.FamilyRental;
+import rentals.HourRental;
 import rentals.Rental;
 import rentals.WeekRental;
 
@@ -17,7 +18,7 @@ public class RentalFactory implements AbstractFactory {
 		case DAILY:
 			return new DayRental(id,client, bike);
 		case HOURLY:
-			return new WeekRental(id,client,bike);
+			return new HourRental(id,client,bike);
 		case FAMILY:
 			return new FamilyRental(id);
 		default:

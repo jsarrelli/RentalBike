@@ -36,7 +36,7 @@ public abstract class SingleRental implements Rental {
 			period = 1;
 		}
 		float result = rate * period;
-		log.debug("Charge from: " + formatDate(startDate) + " to " + formatDate(estimatedDate)+ " is $" + result);
+		log.info("Charge from: " + formatDate(startDate) + " to " + formatDate(estimatedDate)+ " is $" + result);
 		return result;
 	}
 

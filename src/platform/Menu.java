@@ -164,7 +164,7 @@ public class Menu {
 		System.out.print("Insert your name: ");
 		String name = scanner.nextLine();
 		platform.addClient(name);
-		LOGGER.debug("Successfully created user. Username :"+name);
+		LOGGER.info("Successfully created user. Username :"+name);
 	}
 
 	public void optionsMenu() throws Exception {

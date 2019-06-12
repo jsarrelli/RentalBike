@@ -40,7 +40,7 @@ public class Platform {
 	public Rental newRent(Client client, RentalTypes rentType) throws Exception {
 		Bike availableBike = getAvailableBike();
 		if (availableBike == null) {
-			logger.debug("No available bike");
+			logger.info("No available bike");
 			throw new Exception("There is no available bike");
 
 		}
@@ -105,6 +105,6 @@ public class Platform {
 
 	public void newBike() {
 		bikes.add(new Bike(bikes.size()));
-		logger.debug("New bike in system");
+		logger.info("New bike in system");
 	}
 }
