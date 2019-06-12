@@ -3,7 +3,7 @@ package rentals;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 
-public class FamilyRental extends Promotion implements Rental  {
+public class FamilyRental extends Promotion {
 	private int id;
 	private ArrayList<Rental> rentals;
 

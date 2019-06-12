@@ -1,0 +1,1221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_NdGmcI1GEemfRI0MbuUd1w" name="RentalBike">
+    <eAnnotations xmi:id="_Nl1EoI1GEemfRI0MbuUd1w" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_Nl1EoY1GEemfRI0MbuUd1w" source="codegen">
+        <details xmi:id="_Nl1Eoo1GEemfRI0MbuUd1w" key="codegenDirectory" value="/RentalBike/src"/>
+        <details xmi:id="_Rnm4AI1GEemfRI0MbuUd1w" key="AssociatedSourceCode" value="/RentalBike/src/factories/AbstractFactory.java;2167550424/1;/RentalBike/src/factories/RentalFactory.java;490854793/1;/RentalBike/src/factories/RentalTypes.java;968902158/1;/RentalBike/src/platform/Bike.java;1500958383/1;/RentalBike/src/platform/Client.java;1834239518/1;/RentalBike/src/platform/Main.java;3195325886/1;/RentalBike/src/rentals/WeekRental.java;2360687971/1;/RentalBike/src/rentals/DayRental.java;1948813638/1;/RentalBike/src/rentals/FamilyRental.java;3593457906/1;/RentalBike/src/rentals/HourRental.java;5989367/1;/RentalBike/src/rentals/Promotion.java;4287550053/1;/RentalBike/src/rentals/Rental.java;184331390/1;/RentalBike/src/rentals/SingleRental.java;4203108817/1;/RentalBike/src/platform/Menu.java;2669533126/1;/RentalBike/src/tests/testCharges.java;3422673864/1;/RentalBike/src/tests/testFamilyRental.java;712023061/1;/RentalBike/src/platform/Platform.java;340916590/0;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_N2rkEI1GEemfRI0MbuUd1w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_N2sLII1GEemfRI0MbuUd1w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_N2sLIY1GEemfRI0MbuUd1w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_N2sLIo1GEemfRI0MbuUd1w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_N2sLI41GEemfRI0MbuUd1w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_N2sLJI1GEemfRI0MbuUd1w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_N2sLJY1GEemfRI0MbuUd1w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_N2sLJo1GEemfRI0MbuUd1w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_N2syMI1GEemfRI0MbuUd1w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_N2xDoI1GEemfRI0MbuUd1w" name="platform">
+      <packagedElement xmi:type="uml:Class" xmi:id="_N4EEII1GEemfRI0MbuUd1w" name="Bike">
+        <ownedAttribute xmi:id="_N7cvUY1GEemfRI0MbuUd1w" name="idBike">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_N7dWYI1GEemfRI0MbuUd1w" name="isRented" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N7xfdI1GEemfRI0MbuUd1w" name="Bike" specification="_N4FSQI1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N7xfdY1GEemfRI0MbuUd1w" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_N7xfdo1GEemfRI0MbuUd1w" type="_N4EEII1GEemfRI0MbuUd1w" direction="return"/>
+          <language>java</language>
+          <body>this.idBike=id;
+		isRented = false;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N7yGgI1GEemfRI0MbuUd1w" name="isRented" specification="_N4GgYI1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N7yGgY1GEemfRI0MbuUd1w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return isRented;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N7yGgo1GEemfRI0MbuUd1w" name="setRented" specification="_N4HHcI1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N7yGg41GEemfRI0MbuUd1w" name="isRented">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>this.isRented = isRented;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_N4FSQI1GEemfRI0MbuUd1w" name="Bike" method="_N7xfdI1GEemfRI0MbuUd1w">
+          <eAnnotations xmi:id="_N4F5UI1GEemfRI0MbuUd1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_N4F5UY1GEemfRI0MbuUd1w" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_N4FSQY1GEemfRI0MbuUd1w" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_N4F5Uo1GEemfRI0MbuUd1w" type="_N4EEII1GEemfRI0MbuUd1w" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_N4GgYI1GEemfRI0MbuUd1w" name="isRented" method="_N7yGgI1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N4GgYY1GEemfRI0MbuUd1w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_N4HHcI1GEemfRI0MbuUd1w" name="setRented" method="_N7yGgo1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N4HHcY1GEemfRI0MbuUd1w" name="isRented">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_N4IVkI1GEemfRI0MbuUd1w" name="Client">
+        <ownedAttribute xmi:id="_N7dWYo1GEemfRI0MbuUd1w" name="name">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N7yGhI1GEemfRI0MbuUd1w" name="Client" specification="_N4JjsI1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N7yGhY1GEemfRI0MbuUd1w" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_N7yGho1GEemfRI0MbuUd1w" type="_N4IVkI1GEemfRI0MbuUd1w" direction="return"/>
+          <language>java</language>
+          <body>super();
+		this.name = name;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_N4JjsI1GEemfRI0MbuUd1w" name="Client" method="_N7yGhI1GEemfRI0MbuUd1w">
+          <eAnnotations xmi:id="_N4Jjso1GEemfRI0MbuUd1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_N4Jjs41GEemfRI0MbuUd1w" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_N4JjsY1GEemfRI0MbuUd1w" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_N4JjtI1GEemfRI0MbuUd1w" type="_N4IVkI1GEemfRI0MbuUd1w" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_N4KKwI1GEemfRI0MbuUd1w" name="Main">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N7ytkI1GEemfRI0MbuUd1w" name="main" specification="_N4LY4I1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N7ytkY1GEemfRI0MbuUd1w" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_N7ytko1GEemfRI0MbuUd1w" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>Platform plataform = Platform.getInstance();
+		Menu menu = Menu.getInstance();
+		plataform.newBike();
+		plataform.newBike();
+		plataform.newBike();
+
+		while (true) {
+			menu.optionsMenu();
+		}
+
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_N4LY4I1GEemfRI0MbuUd1w" name="main" isStatic="true" method="_N7ytkI1GEemfRI0MbuUd1w" raisedException="_N7LpkY1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N4LY4Y1GEemfRI0MbuUd1w" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_N4LY4o1GEemfRI0MbuUd1w" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_N4p6AI1GEemfRI0MbuUd1w" name="Menu">
+        <ownedAttribute xmi:id="_N7jdAI1GEemfRI0MbuUd1w" name="scanner" type="_N7AqcI1GEemfRI0MbuUd1w" association="_N8BXEY1GEemfRI0MbuUd1w"/>
+        <ownedAttribute xmi:id="_N7kEEY1GEemfRI0MbuUd1w" name="platform" type="_N7Yd4I1GEemfRI0MbuUd1w" association="_N8B-IY1GEemfRI0MbuUd1w"/>
+        <ownedAttribute xmi:id="_N7kEE41GEemfRI0MbuUd1w" name="instance" isStatic="true" type="_N4p6AI1GEemfRI0MbuUd1w" isReadOnly="true" association="_N8ClMY1GEemfRI0MbuUd1w"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N72_Ao1GEemfRI0MbuUd1w" name="Menu" specification="_N4rIII1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N72_A41GEemfRI0MbuUd1w" type="_N4p6AI1GEemfRI0MbuUd1w" direction="return"/>
+          <language>java</language>
+          <body>this.scanner = new Scanner(System.in);
+		this.platform = Platform.getInstance();
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N72_BI1GEemfRI0MbuUd1w" name="processOption" specification="_N4rvM41GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N72_BY1GEemfRI0MbuUd1w" name="option">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>switch (option) {
+		case 1:
+			createUser();
+			break;
+		case 2:
+			rent();
+			break;
+		case 3:
+			actualChargeMenu();
+			break;
+		case 4:
+			estimateCharge();
+			break;
+		case 5:
+			System.exit(0);
+		default:
+			break;
+		}
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N72_Bo1GEemfRI0MbuUd1w" name="estimateCharge" specification="_N4sWQI1GEemfRI0MbuUd1w">
+          <language>java</language>
+          <body>Rental rental = askForRentalId();
+		LocalDateTime estimatedDate = askForDate();
+		float charge = rental.getEstimatedCharge(estimatedDate);
+		System.out.println(&quot;Your estimate charge is &quot; + charge);
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N72_B41GEemfRI0MbuUd1w" name="askForDate" specification="_N4sWQY1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N72_CI1GEemfRI0MbuUd1w" type="_N6wLwY1GEemfRI0MbuUd1w" direction="return"/>
+          <language>java</language>
+          <body>System.out.print(&quot;Insert estimated date (YYYY-mm-dd): &quot;);
+		String stringDate = scanner.nextLine();
+		String[] data = stringDate.split(&quot;-&quot;);
+		LocalDateTime estimatedDate = LocalDateTime.of(Integer.valueOf(data[0]), Integer.valueOf(data[1]),
+				Integer.valueOf(data[2]), 12, 00);
+		return estimatedDate;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N72_CY1GEemfRI0MbuUd1w" name="actualChargeMenu" specification="_N4s9UI1GEemfRI0MbuUd1w">
+          <language>java</language>
+          <body>Rental rental = askForRentalId();
+		float charge = rental.getActualCharge();
+		System.out.println(&quot;Your actual charge is &quot; + charge);
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N73mEI1GEemfRI0MbuUd1w" name="askForRentalId" specification="_N4s9UY1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N73mEY1GEemfRI0MbuUd1w" type="_N4e64I1GEemfRI0MbuUd1w" direction="return"/>
+          <language>java</language>
+          <body>System.out.print(&quot;Search rental by id: &quot;);
+		int id = 0;
+		try {
+			id = Integer.valueOf(scanner.nextLine());
+		} catch (Exception e) {
+			askForRentalId();
+		}
+		Rental rental = platform.getRentals().get(id);
+		return rental;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N73mEo1GEemfRI0MbuUd1w" name="rent" specification="_N4tkYI1GEemfRI0MbuUd1w">
+          <language>java</language>
+          <body>Rental rental = askForRental();
+		if (rental.getClass().getSimpleName().equals(FamilyRental.class.getSimpleName())) {
+			addRentalsToPromotion((FamilyRental) rental);
+		}
+		platform.getRentals().put(rental.getId(), rental);
+		System.out.println(&quot;Success! Your rental Id: &quot; + rental.getId());
+
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N73mE41GEemfRI0MbuUd1w" name="addRentalsToPromotion" specification="_N7CfoI1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N73mFI1GEemfRI0MbuUd1w" name="familyRental" type="_N4TUsI1GEemfRI0MbuUd1w"/>
+          <language>java</language>
+          <body>ArrayList&lt;Rental> associateRentals = new ArrayList&lt;Rental>();
+		System.out.println(&quot;Load from 3 to 5 rentals.&quot;);
+		do {
+
+			Rental associateRental = askForRental();
+			if (Promotion.class.isAssignableFrom(associateRental.getClass())) {
+				System.out.println(&quot;Invalid type&quot;);
+			}else {
+				associateRentals.add(associateRental);
+			}
+			
+			System.out.println(&quot;Do you wish to continue? yes or no :&quot;);
+			String input = scanner.nextLine();
+			if (input.equalsIgnoreCase(&quot;no&quot;)) {
+				break;
+			}
+
+		} while (familyRental.getRentals().size() &lt;= 5);
+		familyRental.addRentals(associateRentals);
+
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N73mFY1GEemfRI0MbuUd1w" name="askForRental" specification="_N4tkYY1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N73mFo1GEemfRI0MbuUd1w" type="_N4e64I1GEemfRI0MbuUd1w" direction="return"/>
+          <language>java</language>
+          <body>RentalTypes rentType = askForRentalType();
+		Client client = askForClientName();
+		return platform.newRent(client, rentType);
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N73mF41GEemfRI0MbuUd1w" name="askForRentalType" specification="_N4uLcI1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N73mGI1GEemfRI0MbuUd1w" type="_N36TII1GEemfRI0MbuUd1w" direction="return"/>
+          <language>java</language>
+          <body>RentalTypes rentType;
+		ArrayList&lt;RentalTypes> rentTypes = new ArrayList&lt;RentalTypes>(Arrays.asList(RentalTypes.values()));
+		System.out.println(&quot;Select which rental type you prefer&quot;);
+		int index = 0;
+		for (RentalTypes rentalType : rentTypes) {
+			System.out.println(index + 1 + &quot;.&quot; + rentalType.getValue());
+			index++;
+		}
+		Integer rentTypeIndex = Integer.parseInt(scanner.nextLine()) - 1;
+		rentType = rentTypes.get(rentTypeIndex);
+		if (rentType == null) {
+			System.out.println(&quot;Wrong type&quot;);
+			askForRentalType();
+		}
+		return rentType;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N73mGY1GEemfRI0MbuUd1w" name="askForClientName" specification="_N4vZkI1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N73mGo1GEemfRI0MbuUd1w" type="_N4IVkI1GEemfRI0MbuUd1w" direction="return"/>
+          <language>java</language>
+          <body>Platform plataform = Platform.getInstance();
+		Client client;
+
+		System.out.print(&quot;Please insert your name:&quot;);
+		String name = scanner.nextLine();
+		client = plataform.getClientByName(name);
+		if (client == null) {
+			System.out.println(&quot;Client does not exist\n&quot;);
+			optionsMenu();
+		}
+
+		return client;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N73mG41GEemfRI0MbuUd1w" name="createUser" specification="_N4vZkY1GEemfRI0MbuUd1w">
+          <language>java</language>
+          <body>System.out.print(&quot;Insert your name: &quot;);
+		String name = scanner.nextLine();
+		platform.addClient(name);
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N73mHI1GEemfRI0MbuUd1w" name="optionsMenu" specification="_N4wAoI1GEemfRI0MbuUd1w">
+          <language>java</language>
+          <body>int option = 5;
+		System.out.println(&quot;\nWelcome to our Rental System \n&quot; + &quot;Please select an option:\n&quot; + &quot;1.Create User\n&quot;
+				+ &quot;2.Rent a bike\n&quot; + &quot;3.Calculate actual charge\n&quot; + &quot;4.Estimate charges \n&quot; + &quot;5.Exit\n&quot;);
+
+		try {
+			option = Integer.parseInt(scanner.nextLine());
+
+		} catch (Exception e) {
+			System.out.println(&quot;Please select one option\n&quot;);
+			optionsMenu();
+		}
+		processOption(option);
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_N4rIII1GEemfRI0MbuUd1w" name="Menu" visibility="private" method="_N72_Ao1GEemfRI0MbuUd1w">
+          <eAnnotations xmi:id="_N4rvMI1GEemfRI0MbuUd1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_N4rvMY1GEemfRI0MbuUd1w" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_N4rvMo1GEemfRI0MbuUd1w" type="_N4p6AI1GEemfRI0MbuUd1w" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_N4rvM41GEemfRI0MbuUd1w" name="processOption" visibility="private" method="_N72_BI1GEemfRI0MbuUd1w" raisedException="_N7LpkY1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N4rvNI1GEemfRI0MbuUd1w" name="option">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_N4sWQI1GEemfRI0MbuUd1w" name="estimateCharge" visibility="private" method="_N72_Bo1GEemfRI0MbuUd1w"/>
+        <ownedOperation xmi:id="_N4sWQY1GEemfRI0MbuUd1w" name="askForDate" visibility="private" method="_N72_B41GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N7ZsAI1GEemfRI0MbuUd1w" type="_N6wLwY1GEemfRI0MbuUd1w" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_N4s9UI1GEemfRI0MbuUd1w" name="actualChargeMenu" visibility="private" method="_N72_CY1GEemfRI0MbuUd1w"/>
+        <ownedOperation xmi:id="_N4s9UY1GEemfRI0MbuUd1w" name="askForRentalId" visibility="private" method="_N73mEI1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N7B4kI1GEemfRI0MbuUd1w" type="_N4e64I1GEemfRI0MbuUd1w" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_N4tkYI1GEemfRI0MbuUd1w" name="rent" visibility="private" method="_N73mEo1GEemfRI0MbuUd1w" raisedException="_N7LpkY1GEemfRI0MbuUd1w"/>
+        <ownedOperation xmi:id="_N4tkYY1GEemfRI0MbuUd1w" name="askForRental" visibility="private" method="_N73mFY1GEemfRI0MbuUd1w" raisedException="_N7LpkY1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N7Cfoo1GEemfRI0MbuUd1w" type="_N4e64I1GEemfRI0MbuUd1w" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_N4uLcI1GEemfRI0MbuUd1w" name="askForRentalType" visibility="private" method="_N73mF41GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N7DGsI1GEemfRI0MbuUd1w" type="_N36TII1GEemfRI0MbuUd1w" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_N4vZkI1GEemfRI0MbuUd1w" name="askForClientName" visibility="private" method="_N73mGY1GEemfRI0MbuUd1w" raisedException="_N7LpkY1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N7DGsY1GEemfRI0MbuUd1w" type="_N4IVkI1GEemfRI0MbuUd1w" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_N4vZkY1GEemfRI0MbuUd1w" name="createUser" visibility="private" method="_N73mG41GEemfRI0MbuUd1w"/>
+        <ownedOperation xmi:id="_N4wAoI1GEemfRI0MbuUd1w" name="optionsMenu" method="_N73mHI1GEemfRI0MbuUd1w" raisedException="_N7LpkY1GEemfRI0MbuUd1w"/>
+        <ownedOperation xmi:id="_N7CfoI1GEemfRI0MbuUd1w" name="addRentalsToPromotion" visibility="private" method="_N73mE41GEemfRI0MbuUd1w" raisedException="_N7LpkY1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N7CfoY1GEemfRI0MbuUd1w" name="familyRental" type="_N4TUsI1GEemfRI0MbuUd1w"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_N7Yd4I1GEemfRI0MbuUd1w" name="Platform"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_N8BXEY1GEemfRI0MbuUd1w" name="" memberEnd="_N8BXEo1GEemfRI0MbuUd1w _N7jdAI1GEemfRI0MbuUd1w">
+        <ownedEnd xmi:id="_N8BXEo1GEemfRI0MbuUd1w" name="" type="_N4p6AI1GEemfRI0MbuUd1w" association="_N8BXEY1GEemfRI0MbuUd1w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_N8B-IY1GEemfRI0MbuUd1w" name="" memberEnd="_N8B-Io1GEemfRI0MbuUd1w _N7kEEY1GEemfRI0MbuUd1w">
+        <ownedEnd xmi:id="_N8B-Io1GEemfRI0MbuUd1w" name="" type="_N4p6AI1GEemfRI0MbuUd1w" association="_N8B-IY1GEemfRI0MbuUd1w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_N8ClMY1GEemfRI0MbuUd1w" name="" memberEnd="_N8ClMo1GEemfRI0MbuUd1w _N7kEE41GEemfRI0MbuUd1w">
+        <ownedEnd xmi:id="_N8ClMo1GEemfRI0MbuUd1w" name="" type="_N4p6AI1GEemfRI0MbuUd1w" association="_N8ClMY1GEemfRI0MbuUd1w"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_N2xqsI1GEemfRI0MbuUd1w" name="rentals">
+      <packagedElement xmi:type="uml:Class" xmi:id="_N4MnAI1GEemfRI0MbuUd1w" name="WeekRental">
+        <generalization xmi:id="_N6yoAo1GEemfRI0MbuUd1w" general="_N4gwEI1GEemfRI0MbuUd1w"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N7ytk41GEemfRI0MbuUd1w" name="WeekRental" specification="_N6yA8I1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N7ytlI1GEemfRI0MbuUd1w" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_N7ytlY1GEemfRI0MbuUd1w" name="client" type="_N4IVkI1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N7ytlo1GEemfRI0MbuUd1w" name="bike" type="_N4EEII1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N7ytl41GEemfRI0MbuUd1w" type="_N4MnAI1GEemfRI0MbuUd1w" direction="return"/>
+          <language>java</language>
+          <body>super(id,60, client, bike);
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N7ytmI1GEemfRI0MbuUd1w" name="getPeriod" specification="_N7NewI1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N7ytmY1GEemfRI0MbuUd1w" name="finishDate" type="_N6wLwY1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N7ytmo1GEemfRI0MbuUd1w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return (int) Math.ceil(Duration.between(startDate, finishDate).toDays()/7);
+
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_N6yA8I1GEemfRI0MbuUd1w" name="WeekRental" method="_N7ytk41GEemfRI0MbuUd1w">
+          <eAnnotations xmi:id="_N6yA9I1GEemfRI0MbuUd1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_N6yoAI1GEemfRI0MbuUd1w" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_N6yA8Y1GEemfRI0MbuUd1w" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_N6yA8o1GEemfRI0MbuUd1w" name="client" type="_N4IVkI1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N6yA841GEemfRI0MbuUd1w" name="bike" type="_N4EEII1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N6yoAY1GEemfRI0MbuUd1w" type="_N4MnAI1GEemfRI0MbuUd1w" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_N7NewI1GEemfRI0MbuUd1w" name="getPeriod" method="_N7ytmI1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N7NewY1GEemfRI0MbuUd1w" name="finishDate" type="_N6wLwY1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N7Newo1GEemfRI0MbuUd1w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_N4PqUI1GEemfRI0MbuUd1w" name="DayRental">
+        <generalization xmi:id="_N61EQI1GEemfRI0MbuUd1w" general="_N4gwEI1GEemfRI0MbuUd1w"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N7zUoI1GEemfRI0MbuUd1w" name="DayRental" specification="_N6z2II1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N7zUoY1GEemfRI0MbuUd1w" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_N7zUoo1GEemfRI0MbuUd1w" name="client" type="_N4IVkI1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N7zUo41GEemfRI0MbuUd1w" name="bike" type="_N4EEII1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N7zUpI1GEemfRI0MbuUd1w" type="_N4PqUI1GEemfRI0MbuUd1w" direction="return"/>
+          <language>java</language>
+          <body>super(id,20, client, bike);
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N7zUpY1GEemfRI0MbuUd1w" name="getPeriod" specification="_N7PT8I1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N7zUpo1GEemfRI0MbuUd1w" name="finishDate" type="_N6wLwY1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N7zUp41GEemfRI0MbuUd1w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return (int) Duration.between(startDate, finishDate).toDays();
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_N6z2II1GEemfRI0MbuUd1w" name="DayRental" method="_N7zUoI1GEemfRI0MbuUd1w">
+          <eAnnotations xmi:id="_N60dMY1GEemfRI0MbuUd1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_N60dMo1GEemfRI0MbuUd1w" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_N6z2IY1GEemfRI0MbuUd1w" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_N6z2Io1GEemfRI0MbuUd1w" name="client" type="_N4IVkI1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N60dMI1GEemfRI0MbuUd1w" name="bike" type="_N4EEII1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N60dM41GEemfRI0MbuUd1w" type="_N4PqUI1GEemfRI0MbuUd1w" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_N7PT8I1GEemfRI0MbuUd1w" name="getPeriod" method="_N7zUpY1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N7PT8Y1GEemfRI0MbuUd1w" name="finishDate" type="_N6wLwY1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N7PT8o1GEemfRI0MbuUd1w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_N4TUsI1GEemfRI0MbuUd1w" name="FamilyRental">
+        <generalization xmi:id="_N625cI1GEemfRI0MbuUd1w" general="_N4dswI1GEemfRI0MbuUd1w"/>
+        <ownedAttribute xmi:id="_N7d9cI1GEemfRI0MbuUd1w" name="id">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_N7fyoo1GEemfRI0MbuUd1w" name="rentals" type="_N61rUI1GEemfRI0MbuUd1w" association="_N7-60I1GEemfRI0MbuUd1w"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N7z7sY1GEemfRI0MbuUd1w" name="FamilyRental" specification="_N4Ui0I1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N7z7so1GEemfRI0MbuUd1w" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_N7z7s41GEemfRI0MbuUd1w" type="_N4TUsI1GEemfRI0MbuUd1w" direction="return"/>
+          <language>java</language>
+          <body>super();
+		this.id = id;
+		this.rentals = new ArrayList&lt;Rental>();
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N7z7tI1GEemfRI0MbuUd1w" name="getEstimatedCharge" specification="_N7QiEI1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N7z7tY1GEemfRI0MbuUd1w" name="estimatedDate" type="_N6wLwY1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N7z7to1GEemfRI0MbuUd1w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return (float) rentals.parallelStream().mapToDouble(rental -> rental.getEstimatedCharge(estimatedDate)).sum();
+
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N7z7t41GEemfRI0MbuUd1w" name="getActualCharge" specification="_N4Vw8I1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N7z7uI1GEemfRI0MbuUd1w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return (float) rentals.parallelStream().mapToDouble(rental -> rental.getActualCharge()).sum();
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N7z7uY1GEemfRI0MbuUd1w" name="addRentals" specification="_N7RJI41GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N7z7uo1GEemfRI0MbuUd1w" name="associateRentals" type="_N61rUI1GEemfRI0MbuUd1w"/>
+          <language>java</language>
+          <body>if (validateNumberOfAssociateRentals(associateRentals) &amp;&amp; validateTypesOfRentals(associateRentals))  {
+			this.rentals.addAll(associateRentals);
+		} else {
+			throw new Exception(&quot;Error! Family Rental accepts 3 to 5 rentals and not inlude another promotions&quot;);
+		}
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N7z7u41GEemfRI0MbuUd1w" name="validateTypesOfRentals" specification="_N7S-UI1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N7z7vI1GEemfRI0MbuUd1w" name="associateRentals" type="_N61rUI1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N7z7vY1GEemfRI0MbuUd1w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return !associateRentals.parallelStream().anyMatch(rental-> Promotion.class.isAssignableFrom(rental.getClass()));
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N70iwI1GEemfRI0MbuUd1w" name="validateNumberOfAssociateRentals" specification="_N7TlYY1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N70iwY1GEemfRI0MbuUd1w" name="associateRentals" type="_N61rUI1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N70iwo1GEemfRI0MbuUd1w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return associateRentals.size() &lt;= 5 &amp;&amp; associateRentals.size() >= 3;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_N4Ui0I1GEemfRI0MbuUd1w" name="FamilyRental" method="_N7z7sY1GEemfRI0MbuUd1w">
+          <eAnnotations xmi:id="_N4VJ4I1GEemfRI0MbuUd1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_N4VJ4Y1GEemfRI0MbuUd1w" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_N4Ui0Y1GEemfRI0MbuUd1w" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_N4VJ4o1GEemfRI0MbuUd1w" type="_N4TUsI1GEemfRI0MbuUd1w" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_N4Vw8I1GEemfRI0MbuUd1w" name="getActualCharge" method="_N7z7t41GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N4Vw8Y1GEemfRI0MbuUd1w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_N7QiEI1GEemfRI0MbuUd1w" name="getEstimatedCharge" method="_N7z7tI1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N7QiEY1GEemfRI0MbuUd1w" name="estimatedDate" type="_N6wLwY1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N7QiEo1GEemfRI0MbuUd1w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_N7RJI41GEemfRI0MbuUd1w" name="addRentals" method="_N7z7uY1GEemfRI0MbuUd1w" raisedException="_N7LpkY1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N7RwMI1GEemfRI0MbuUd1w" name="associateRentals" type="_N61rUI1GEemfRI0MbuUd1w"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_N7S-UI1GEemfRI0MbuUd1w" name="validateTypesOfRentals" visibility="private" method="_N7z7u41GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N7S-UY1GEemfRI0MbuUd1w" name="associateRentals" type="_N61rUI1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N7S-Uo1GEemfRI0MbuUd1w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_N7TlYY1GEemfRI0MbuUd1w" name="validateNumberOfAssociateRentals" visibility="private" method="_N70iwI1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N7UMcI1GEemfRI0MbuUd1w" name="associateRentals" type="_N61rUI1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N7UMcY1GEemfRI0MbuUd1w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_N4b3kI1GEemfRI0MbuUd1w" name="HourRental">
+        <generalization xmi:id="_N658wI1GEemfRI0MbuUd1w" general="_N4gwEI1GEemfRI0MbuUd1w"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N70iw41GEemfRI0MbuUd1w" name="HourRental" specification="_N64uoI1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N70ixI1GEemfRI0MbuUd1w" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_N70ixY1GEemfRI0MbuUd1w" name="client" type="_N4IVkI1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N70ixo1GEemfRI0MbuUd1w" name="bike" type="_N4EEII1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N70ix41GEemfRI0MbuUd1w" type="_N4b3kI1GEemfRI0MbuUd1w" direction="return"/>
+          <language>java</language>
+          <body>super(id, 5, client, bike);
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N70iyI1GEemfRI0MbuUd1w" name="getPeriod" specification="_N7VakI1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N70iyY1GEemfRI0MbuUd1w" name="finishDate" type="_N6wLwY1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N70iyo1GEemfRI0MbuUd1w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return (int) Duration.between(startDate, finishDate).toHours();
+		
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_N64uoI1GEemfRI0MbuUd1w" name="HourRental" method="_N70iw41GEemfRI0MbuUd1w">
+          <eAnnotations xmi:id="_N65Vso1GEemfRI0MbuUd1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_N65Vs41GEemfRI0MbuUd1w" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_N64uoY1GEemfRI0MbuUd1w" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_N65VsI1GEemfRI0MbuUd1w" name="client" type="_N4IVkI1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N65VsY1GEemfRI0MbuUd1w" name="bike" type="_N4EEII1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N65VtI1GEemfRI0MbuUd1w" type="_N4b3kI1GEemfRI0MbuUd1w" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_N7VakI1GEemfRI0MbuUd1w" name="getPeriod" method="_N70iyI1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N7VakY1GEemfRI0MbuUd1w" name="finishDate" type="_N6wLwY1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N7Vako1GEemfRI0MbuUd1w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_N4dswI1GEemfRI0MbuUd1w" name="Promotion" isAbstract="true">
+        <interfaceRealization xmi:id="_N658wY1GEemfRI0MbuUd1w" client="_N4dswI1GEemfRI0MbuUd1w" supplier="_N4e64I1GEemfRI0MbuUd1w" contract="_N4e64I1GEemfRI0MbuUd1w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_N4e64I1GEemfRI0MbuUd1w" name="Rental">
+        <ownedAttribute xmi:id="_N4fh8I1GEemfRI0MbuUd1w" name="actualCharge" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_N4gJAI1GEemfRI0MbuUd1w" name="id" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_N7WBo41GEemfRI0MbuUd1w" name="getEstimatedCharge">
+          <ownedParameter xmi:id="_N7WosI1GEemfRI0MbuUd1w" name="estimatedDate" type="_N6wLwY1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N7WosY1GEemfRI0MbuUd1w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_N4gwEI1GEemfRI0MbuUd1w" name="SingleRental" isAbstract="true">
+        <ownedAttribute xmi:id="_N7hAwI1GEemfRI0MbuUd1w" name="rate" visibility="protected">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_N7hn0Y1GEemfRI0MbuUd1w" name="startDate" visibility="protected" type="_N6wLwY1GEemfRI0MbuUd1w" association="_N8AI8I1GEemfRI0MbuUd1w"/>
+        <ownedAttribute xmi:id="_N7iO4Y1GEemfRI0MbuUd1w" name="client" visibility="protected" type="_N4IVkI1GEemfRI0MbuUd1w" association="_N8AwAI1GEemfRI0MbuUd1w"/>
+        <ownedAttribute xmi:id="_N7i18I1GEemfRI0MbuUd1w" name="bike" visibility="protected" type="_N4EEII1GEemfRI0MbuUd1w" association="_N8AwA41GEemfRI0MbuUd1w"/>
+        <ownedAttribute xmi:id="_N7i18o1GEemfRI0MbuUd1w" name="id" visibility="protected">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <interfaceRealization xmi:id="_N67K4I1GEemfRI0MbuUd1w" client="_N4gwEI1GEemfRI0MbuUd1w" supplier="_N4e64I1GEemfRI0MbuUd1w" contract="_N4e64I1GEemfRI0MbuUd1w"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N71J0I1GEemfRI0MbuUd1w" name="SingleRental" specification="_N67x8I1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N71J0Y1GEemfRI0MbuUd1w" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_N71J0o1GEemfRI0MbuUd1w" name="rate">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_N71J041GEemfRI0MbuUd1w" name="client" type="_N4IVkI1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N71J1I1GEemfRI0MbuUd1w" name="bike" type="_N4EEII1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N71J1Y1GEemfRI0MbuUd1w" type="_N4gwEI1GEemfRI0MbuUd1w" direction="return"/>
+          <language>java</language>
+          <body>super();
+		this.startDate = LocalDateTime.now();
+		this.rate = rate;
+		this.client = client;
+		this.bike = bike;
+		this.id = id;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N71J1o1GEemfRI0MbuUd1w" name="getActualCharge" specification="_N4h-MI1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N71J141GEemfRI0MbuUd1w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return getEstimatedCharge(LocalDateTime.now());
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N71J2I1GEemfRI0MbuUd1w" name="getEstimatedCharge" specification="_N7XPwI1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N71J2Y1GEemfRI0MbuUd1w" name="estimatedDate" type="_N6wLwY1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N71J2o1GEemfRI0MbuUd1w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>int period = getPeriod(estimatedDate);
+		if (period == 0) {
+			period = 1;
+		}
+		return rate * period;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N71w4I1GEemfRI0MbuUd1w" name="getRate" specification="_N4jMUI1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N71w4Y1GEemfRI0MbuUd1w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return rate;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N71w4o1GEemfRI0MbuUd1w" name="setRate" specification="_N4jMUo1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N71w441GEemfRI0MbuUd1w" name="rate">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>this.rate = rate;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N71w5I1GEemfRI0MbuUd1w" name="getStartDate" specification="_N4jzYY1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N71w5Y1GEemfRI0MbuUd1w" type="_N6wLwY1GEemfRI0MbuUd1w" direction="return"/>
+          <language>java</language>
+          <body>return startDate;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N71w5o1GEemfRI0MbuUd1w" name="setStartDate" specification="_N7XPxI1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N71w541GEemfRI0MbuUd1w" name="startDate" type="_N6wLwY1GEemfRI0MbuUd1w"/>
+          <language>java</language>
+          <body>this.startDate = startDate;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N71w6I1GEemfRI0MbuUd1w" name="getClient" specification="_N4kacI1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N71w6Y1GEemfRI0MbuUd1w" type="_N4IVkI1GEemfRI0MbuUd1w" direction="return"/>
+          <language>java</language>
+          <body>return client;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N71w6o1GEemfRI0MbuUd1w" name="setClient" specification="_N69AEY1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N71w641GEemfRI0MbuUd1w" name="client" type="_N4IVkI1GEemfRI0MbuUd1w"/>
+          <language>java</language>
+          <body>this.client = client;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N72X8I1GEemfRI0MbuUd1w" name="getBike" specification="_N4kacY1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N72X8Y1GEemfRI0MbuUd1w" type="_N4EEII1GEemfRI0MbuUd1w" direction="return"/>
+          <language>java</language>
+          <body>return bike;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N72X8o1GEemfRI0MbuUd1w" name="setBike" specification="_N69nIY1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N72X841GEemfRI0MbuUd1w" name="bike" type="_N4EEII1GEemfRI0MbuUd1w"/>
+          <language>java</language>
+          <body>this.bike = bike;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N72X9I1GEemfRI0MbuUd1w" name="getId" specification="_N4lBgI1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N72X9Y1GEemfRI0MbuUd1w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return id;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N72X9o1GEemfRI0MbuUd1w" name="setId" specification="_N4lokI1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N72X941GEemfRI0MbuUd1w" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>this.id = id;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_N4h-MI1GEemfRI0MbuUd1w" name="getActualCharge" method="_N71J1o1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N4ilQI1GEemfRI0MbuUd1w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_N4jMUI1GEemfRI0MbuUd1w" name="getRate" method="_N71w4I1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N4jMUY1GEemfRI0MbuUd1w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_N4jMUo1GEemfRI0MbuUd1w" name="setRate" method="_N71w4o1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N4jzYI1GEemfRI0MbuUd1w" name="rate">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_N4jzYY1GEemfRI0MbuUd1w" name="getStartDate" method="_N71w5I1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N7XPw41GEemfRI0MbuUd1w" type="_N6wLwY1GEemfRI0MbuUd1w" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_N4kacI1GEemfRI0MbuUd1w" name="getClient" method="_N71w6I1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N69AEI1GEemfRI0MbuUd1w" type="_N4IVkI1GEemfRI0MbuUd1w" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_N4kacY1GEemfRI0MbuUd1w" name="getBike" method="_N72X8I1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N69nII1GEemfRI0MbuUd1w" type="_N4EEII1GEemfRI0MbuUd1w" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_N4lBgI1GEemfRI0MbuUd1w" name="getId" method="_N72X9I1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N4lBgY1GEemfRI0MbuUd1w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_N4lokI1GEemfRI0MbuUd1w" name="setId" method="_N72X9o1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N4lokY1GEemfRI0MbuUd1w" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_N67x8I1GEemfRI0MbuUd1w" name="SingleRental" method="_N71J0I1GEemfRI0MbuUd1w">
+          <eAnnotations xmi:id="_N68ZAo1GEemfRI0MbuUd1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_N68ZA41GEemfRI0MbuUd1w" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_N67x8Y1GEemfRI0MbuUd1w" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_N67x8o1GEemfRI0MbuUd1w" name="rate">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_N68ZAI1GEemfRI0MbuUd1w" name="client" type="_N4IVkI1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N68ZAY1GEemfRI0MbuUd1w" name="bike" type="_N4EEII1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N68ZBI1GEemfRI0MbuUd1w" type="_N4gwEI1GEemfRI0MbuUd1w" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_N69AEY1GEemfRI0MbuUd1w" name="setClient" method="_N71w6o1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N69AEo1GEemfRI0MbuUd1w" name="client" type="_N4IVkI1GEemfRI0MbuUd1w"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_N69nIY1GEemfRI0MbuUd1w" name="setBike" method="_N72X8o1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N69nIo1GEemfRI0MbuUd1w" name="bike" type="_N4EEII1GEemfRI0MbuUd1w"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_N7XPwI1GEemfRI0MbuUd1w" name="getEstimatedCharge" method="_N71J2I1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N7XPwY1GEemfRI0MbuUd1w" name="estimatedDate" type="_N6wLwY1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N7XPwo1GEemfRI0MbuUd1w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_N7XPxI1GEemfRI0MbuUd1w" name="setStartDate" method="_N71w5o1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N7XPxY1GEemfRI0MbuUd1w" name="startDate" type="_N6wLwY1GEemfRI0MbuUd1w"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_N7X20I1GEemfRI0MbuUd1w" name="getPeriod" isAbstract="true">
+          <ownedParameter xmi:id="_N7X20Y1GEemfRI0MbuUd1w" name="finishDate" type="_N6wLwY1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N7X20o1GEemfRI0MbuUd1w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_N7-60I1GEemfRI0MbuUd1w" name="" memberEnd="_N7-60Y1GEemfRI0MbuUd1w _N7fyoo1GEemfRI0MbuUd1w">
+        <ownedEnd xmi:id="_N7-60Y1GEemfRI0MbuUd1w" name="" type="_N4TUsI1GEemfRI0MbuUd1w" association="_N7-60I1GEemfRI0MbuUd1w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_N8AI8I1GEemfRI0MbuUd1w" name="" memberEnd="_N8AI8Y1GEemfRI0MbuUd1w _N7hn0Y1GEemfRI0MbuUd1w">
+        <ownedEnd xmi:id="_N8AI8Y1GEemfRI0MbuUd1w" name="" type="_N4gwEI1GEemfRI0MbuUd1w" association="_N8AI8I1GEemfRI0MbuUd1w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_N8AwAI1GEemfRI0MbuUd1w" name="" memberEnd="_N8AwAY1GEemfRI0MbuUd1w _N7iO4Y1GEemfRI0MbuUd1w">
+        <ownedEnd xmi:id="_N8AwAY1GEemfRI0MbuUd1w" name="" type="_N4gwEI1GEemfRI0MbuUd1w" association="_N8AwAI1GEemfRI0MbuUd1w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_N8AwA41GEemfRI0MbuUd1w" name="" memberEnd="_N8AwBI1GEemfRI0MbuUd1w _N7i18I1GEemfRI0MbuUd1w">
+        <ownedEnd xmi:id="_N8AwBI1GEemfRI0MbuUd1w" name="" type="_N4gwEI1GEemfRI0MbuUd1w" association="_N8AwA41GEemfRI0MbuUd1w"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_N20uAI1GEemfRI0MbuUd1w" name="factories">
+      <packagedElement xmi:type="uml:Interface" xmi:id="_N3wiII1GEemfRI0MbuUd1w" name="AbstractFactory">
+        <ownedOperation xmi:id="_N6klkI1GEemfRI0MbuUd1w" name="newRent">
+          <ownedParameter xmi:id="_N6lMoI1GEemfRI0MbuUd1w" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_N6lMoY1GEemfRI0MbuUd1w" name="rentalType" type="_N36TII1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N6lMoo1GEemfRI0MbuUd1w" name="client" type="_N4IVkI1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N6lMo41GEemfRI0MbuUd1w" name="bike" type="_N4EEII1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N6lMpI1GEemfRI0MbuUd1w" type="_N4e64I1GEemfRI0MbuUd1w" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_N3324I1GEemfRI0MbuUd1w" name="RentalFactory">
+        <interfaceRealization xmi:id="_N6o3AI1GEemfRI0MbuUd1w" client="_N3324I1GEemfRI0MbuUd1w" supplier="_N3wiII1GEemfRI0MbuUd1w" contract="_N3wiII1GEemfRI0MbuUd1w"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N7tOAI1GEemfRI0MbuUd1w" name="newRent" specification="_N6qFII1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N7tOAY1GEemfRI0MbuUd1w" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_N7tOAo1GEemfRI0MbuUd1w" name="rentalType" type="_N36TII1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N7tOA41GEemfRI0MbuUd1w" name="client" type="_N4IVkI1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N7tOBI1GEemfRI0MbuUd1w" name="bike" type="_N4EEII1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N7tOBY1GEemfRI0MbuUd1w" type="_N4e64I1GEemfRI0MbuUd1w" direction="return"/>
+          <language>java</language>
+          <body>switch (rentalType) {
+		case WEEKLY:
+			return new WeekRental(id,client, bike);
+		case DAILY:
+			return new DayRental(id,client, bike);
+		case HOURLY:
+			return new WeekRental(id,client,bike);
+		case FAMILY:
+			return new FamilyRental(id);
+		default:
+			break;
+		}
+		return null;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_N6qFII1GEemfRI0MbuUd1w" name="newRent" method="_N7tOAI1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N6qFIY1GEemfRI0MbuUd1w" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_N6qsMI1GEemfRI0MbuUd1w" name="rentalType" type="_N36TII1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N6qsMY1GEemfRI0MbuUd1w" name="client" type="_N4IVkI1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N6qsMo1GEemfRI0MbuUd1w" name="bike" type="_N4EEII1GEemfRI0MbuUd1w"/>
+          <ownedParameter xmi:id="_N6rTQI1GEemfRI0MbuUd1w" type="_N4e64I1GEemfRI0MbuUd1w" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_N36TII1GEemfRI0MbuUd1w" name="RentalTypes">
+        <ownedAttribute xmi:id="_N7cIQI1GEemfRI0MbuUd1w" name="value" visibility="package">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_N3_LoI1GEemfRI0MbuUd1w" name="RentalTypes" visibility="private" method="_N7w4YI1GEemfRI0MbuUd1w">
+          <eAnnotations xmi:id="_N4BA0I1GEemfRI0MbuUd1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_N4BA0Y1GEemfRI0MbuUd1w" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_N3_ysI1GEemfRI0MbuUd1w" name="value">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_N4BA0o1GEemfRI0MbuUd1w" type="_N36TII1GEemfRI0MbuUd1w" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_N4CO8I1GEemfRI0MbuUd1w" name="getValue" method="_N7xfcI1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N4CO8Y1GEemfRI0MbuUd1w" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_N4C2AI1GEemfRI0MbuUd1w" name="setValue" method="_N7xfco1GEemfRI0MbuUd1w">
+          <ownedParameter xmi:id="_N4C2AY1GEemfRI0MbuUd1w" name="value">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedLiteral xmi:id="_N37hQI1GEemfRI0MbuUd1w" name="WEEKLY">
+          <specification xmi:type="uml:Expression" xmi:id="_N37hQY1GEemfRI0MbuUd1w">
+            <operand xmi:type="uml:LiteralString" xmi:id="_N75bQI1GEemfRI0MbuUd1w" value="&quot;Week&quot;"/>
+          </specification>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_N38vYI1GEemfRI0MbuUd1w" name="HOURLY">
+          <specification xmi:type="uml:Expression" xmi:id="_N38vYY1GEemfRI0MbuUd1w">
+            <operand xmi:type="uml:LiteralString" xmi:id="_N76CUI1GEemfRI0MbuUd1w" value="&quot;Hour&quot;"/>
+          </specification>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_N38vYo1GEemfRI0MbuUd1w" name="DAILY">
+          <specification xmi:type="uml:Expression" xmi:id="_N38vY41GEemfRI0MbuUd1w">
+            <operand xmi:type="uml:LiteralString" xmi:id="_N76CUY1GEemfRI0MbuUd1w" value="&quot;Day&quot;"/>
+          </specification>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_N38vZI1GEemfRI0MbuUd1w" name="FAMILY">
+          <specification xmi:type="uml:Expression" xmi:id="_N39WcI1GEemfRI0MbuUd1w">
+            <operand xmi:type="uml:LiteralString" xmi:id="_N76CUo1GEemfRI0MbuUd1w" value="&quot;Family&quot;"/>
+          </specification>
+        </ownedLiteral>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_N3NIgI1GEemfRI0MbuUd1w" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_N3NIgY1GEemfRI0MbuUd1w" name="time">
+        <packagedElement xmi:type="uml:Class" xmi:id="_N6u9oI1GEemfRI0MbuUd1w" name="Duration"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_N6wLwY1GEemfRI0MbuUd1w" name="LocalDateTime"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_N3Qy4I1GEemfRI0MbuUd1w" name="util">
+        <packagedElement xmi:type="uml:Class" xmi:id="_N61rUI1GEemfRI0MbuUd1w" name="ArrayList"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_N6_cUI1GEemfRI0MbuUd1w" name="Arrays"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_N7AqcI1GEemfRI0MbuUd1w" name="Scanner"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_N7LpkI1GEemfRI0MbuUd1w" name="lang">
+        <packagedElement xmi:type="uml:Class" xmi:id="_N7LpkY1GEemfRI0MbuUd1w" name="Exception"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_N3dnMI1GEemfRI0MbuUd1w" name="org">
+      <packagedElement xmi:type="uml:Package" xmi:id="_N3eOQI1GEemfRI0MbuUd1w" name="junit">
+        <packagedElement xmi:type="uml:Package" xmi:id="_N3eOQY1GEemfRI0MbuUd1w" name="jupiter">
+          <packagedElement xmi:type="uml:Package" xmi:id="_N3eOQo1GEemfRI0MbuUd1w" name="api">
+            <packagedElement xmi:type="uml:Class" xmi:id="_N7E74I1GEemfRI0MbuUd1w" name="Assertions"/>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_N7GKAY1GEemfRI0MbuUd1w" name="Test"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_N3gDcI1GEemfRI0MbuUd1w" name="tests">
+      <packagedElement xmi:type="uml:Class" xmi:id="_N4zrAI1GEemfRI0MbuUd1w" name="testCharges" visibility="package">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N74NII1GEemfRI0MbuUd1w" name="testGetEstimatedlChargeWeekRental" specification="_N40SEI1GEemfRI0MbuUd1w">
+          <language>java</language>
+          <body>WeekRental weekRental = new WeekRental(0, null, null);
+		LocalDateTime estimatedDate = LocalDateTime.now().plusWeeks(4);
+		assertEquals(60 * 4, weekRental.getEstimatedCharge(estimatedDate));
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N74NIY1GEemfRI0MbuUd1w" name="testGetActualChargeWeekRental" specification="_N405Io1GEemfRI0MbuUd1w">
+          <language>java</language>
+          <body>WeekRental weekRental = new WeekRental(0, null, null);
+		assertEquals(60 * 1, weekRental.getEstimatedCharge(LocalDateTime.now()));
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N74NIo1GEemfRI0MbuUd1w" name="testGetEstimatedlChargeDayRental" specification="_N41gMo1GEemfRI0MbuUd1w">
+          <language>java</language>
+          <body>DayRental rental = new DayRental(0, null, null);
+		LocalDateTime estimatedDate = LocalDateTime.now().plusDays(9);
+		assertEquals(20 * 9, rental.getEstimatedCharge(estimatedDate));
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N74NI41GEemfRI0MbuUd1w" name="testGetActualChargeDayRental" specification="_N42HQo1GEemfRI0MbuUd1w">
+          <language>java</language>
+          <body>DayRental rental = new DayRental(0, null, null);
+		assertEquals(20 * 1, rental.getEstimatedCharge(LocalDateTime.now()));
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N74NJI1GEemfRI0MbuUd1w" name="testGetEstimatedlChargeHourRental" specification="_N42uU41GEemfRI0MbuUd1w">
+          <language>java</language>
+          <body>HourRental rental = new HourRental(0, null, null);
+		LocalDateTime estimatedDate = LocalDateTime.now().plusHours(35);
+		assertEquals(5 * 35, rental.getEstimatedCharge(estimatedDate));
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N74NJY1GEemfRI0MbuUd1w" name="testGetActualChargeHourRental" specification="_N43VY41GEemfRI0MbuUd1w">
+          <language>java</language>
+          <body>HourRental rental = new HourRental(0, null, null);
+		assertEquals(5 * 1, rental.getEstimatedCharge(LocalDateTime.now()));
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N74NJo1GEemfRI0MbuUd1w" name="testGetEstimatedlChargeFamilyRental" specification="_N438c41GEemfRI0MbuUd1w">
+          <language>java</language>
+          <body>FamilyRental familyRental = new FamilyRental(0);
+		ArrayList&lt;Rental> associateRentals = new ArrayList&lt;Rental>();
+		associateRentals.add(new HourRental(0, null, null));
+		associateRentals.add(new DayRental(0, null, null));
+		associateRentals.add(new WeekRental(0, null, null));
+		familyRental.addRentals(associateRentals);
+
+		LocalDateTime estimatedDate = LocalDateTime.now().plusDays(93);
+		int expectedResult = (int) ((93 * 24) * 5 + Math.ceil(93 / 7) * 60 + 93 * 20);
+		assertEquals(expectedResult, familyRental.getEstimatedCharge(estimatedDate));
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N740MI1GEemfRI0MbuUd1w" name="testGetActualChargeFamilyRental" specification="_N45Kko1GEemfRI0MbuUd1w">
+          <language>java</language>
+          <body>FamilyRental familyRental = new FamilyRental(0);
+		ArrayList&lt;Rental> associateRentals = new ArrayList&lt;Rental>();
+		associateRentals.add(new HourRental(0, null, null));
+		associateRentals.add(new DayRental(0, null, null));
+		associateRentals.add(new WeekRental(0, null, null));
+		familyRental.addRentals(associateRentals);
+
+		LocalDateTime estimatedDate = LocalDateTime.now();
+		assertEquals(5 + 20 + 60, familyRental.getEstimatedCharge(estimatedDate));
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_N40SEI1GEemfRI0MbuUd1w" name="testGetEstimatedlChargeWeekRental" visibility="package" method="_N74NII1GEemfRI0MbuUd1w"/>
+        <ownedOperation xmi:id="_N405Io1GEemfRI0MbuUd1w" name="testGetActualChargeWeekRental" visibility="package" method="_N74NIY1GEemfRI0MbuUd1w"/>
+        <ownedOperation xmi:id="_N41gMo1GEemfRI0MbuUd1w" name="testGetEstimatedlChargeDayRental" visibility="package" method="_N74NIo1GEemfRI0MbuUd1w"/>
+        <ownedOperation xmi:id="_N42HQo1GEemfRI0MbuUd1w" name="testGetActualChargeDayRental" visibility="package" method="_N74NI41GEemfRI0MbuUd1w"/>
+        <ownedOperation xmi:id="_N42uU41GEemfRI0MbuUd1w" name="testGetEstimatedlChargeHourRental" visibility="package" method="_N74NJI1GEemfRI0MbuUd1w"/>
+        <ownedOperation xmi:id="_N43VY41GEemfRI0MbuUd1w" name="testGetActualChargeHourRental" visibility="package" method="_N74NJY1GEemfRI0MbuUd1w"/>
+        <ownedOperation xmi:id="_N438c41GEemfRI0MbuUd1w" name="testGetEstimatedlChargeFamilyRental" visibility="package" method="_N74NJo1GEemfRI0MbuUd1w" raisedException="_N7LpkY1GEemfRI0MbuUd1w"/>
+        <ownedOperation xmi:id="_N45Kko1GEemfRI0MbuUd1w" name="testGetActualChargeFamilyRental" visibility="package" method="_N740MI1GEemfRI0MbuUd1w" raisedException="_N7LpkY1GEemfRI0MbuUd1w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_N46_wI1GEemfRI0MbuUd1w" name="testFamilyRental" visibility="package">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N740MY1GEemfRI0MbuUd1w" name="testAddMoreThan5Rentals" specification="_N47m0I1GEemfRI0MbuUd1w">
+          <language>java</language>
+          <body>FamilyRental familyRental = new FamilyRental(0);
+		ArrayList&lt;Rental> associateRentals = new ArrayList&lt;Rental>();
+		associateRentals.add(new HourRental(0, null, null));
+		associateRentals.add(new DayRental(0, null, null));
+		associateRentals.add(new WeekRental(0, null, null));
+		associateRentals.add(new WeekRental(0, null, null));
+		associateRentals.add(new WeekRental(0, null, null));
+		associateRentals.add(new WeekRental(0, null, null));
+		associateRentals.add(new WeekRental(0, null, null));
+
+		assertThrows(Exception.class, () -> familyRental.addRentals(associateRentals));
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N740Mo1GEemfRI0MbuUd1w" name="testAddLThan3Rentals" specification="_N4808I1GEemfRI0MbuUd1w">
+          <language>java</language>
+          <body>FamilyRental familyRental = new FamilyRental(0);
+		ArrayList&lt;Rental> associateRentals = new ArrayList&lt;Rental>();
+		associateRentals.add(new HourRental(0, null, null));
+
+		assertThrows(Exception.class, () -> familyRental.addRentals(associateRentals));
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_N740M41GEemfRI0MbuUd1w" name="testAddIncompatibleRentalType" specification="_N49cAo1GEemfRI0MbuUd1w">
+          <language>java</language>
+          <body>FamilyRental familyRental = new FamilyRental(0);
+		ArrayList&lt;Rental> associateRentals = new ArrayList&lt;Rental>();
+		associateRentals.add(new FamilyRental(0));
+		associateRentals.add(new WeekRental(0, null, null));
+		associateRentals.add(new WeekRental(0, null, null));
+
+		assertThrows(Exception.class, () -> familyRental.addRentals(associateRentals));
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_N47m0I1GEemfRI0MbuUd1w" name="testAddMoreThan5Rentals" visibility="package" method="_N740MY1GEemfRI0MbuUd1w" raisedException="_N7LpkY1GEemfRI0MbuUd1w"/>
+        <ownedOperation xmi:id="_N4808I1GEemfRI0MbuUd1w" name="testAddLThan3Rentals" visibility="package" method="_N740Mo1GEemfRI0MbuUd1w" raisedException="_N7LpkY1GEemfRI0MbuUd1w"/>
+        <ownedOperation xmi:id="_N49cAo1GEemfRI0MbuUd1w" name="testAddIncompatibleRentalType" visibility="package" method="_N740M41GEemfRI0MbuUd1w" raisedException="_N7LpkY1GEemfRI0MbuUd1w"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_Nl3g4I1GEemfRI0MbuUd1w">
+      <eAnnotations xmi:id="_Nl6kMI1GEemfRI0MbuUd1w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_Nl-OkI1GEemfRI0MbuUd1w" base_Package="_NdGmcI1GEemfRI0MbuUd1w">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_N4WYAI1GEemfRI0MbuUd1w" base_Element="_N4Vw8I1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:Annotations xmi:id="_N4XmII1GEemfRI0MbuUd1w" base_Element="_N4Vw8I1GEemfRI0MbuUd1w">
+    <annotations xmi:id="_N4XmIY1GEemfRI0MbuUd1w" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_N40SEY1GEemfRI0MbuUd1w" base_Element="_N40SEI1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:Annotations xmi:id="_N405II1GEemfRI0MbuUd1w" base_Element="_N40SEI1GEemfRI0MbuUd1w">
+    <annotations xmi:id="_N405IY1GEemfRI0MbuUd1w" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_N405I41GEemfRI0MbuUd1w" base_Element="_N405Io1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:Annotations xmi:id="_N41gMI1GEemfRI0MbuUd1w" base_Element="_N405Io1GEemfRI0MbuUd1w">
+    <annotations xmi:id="_N41gMY1GEemfRI0MbuUd1w" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_N41gM41GEemfRI0MbuUd1w" base_Element="_N41gMo1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:Annotations xmi:id="_N42HQI1GEemfRI0MbuUd1w" base_Element="_N41gMo1GEemfRI0MbuUd1w">
+    <annotations xmi:id="_N42HQY1GEemfRI0MbuUd1w" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_N42uUI1GEemfRI0MbuUd1w" base_Element="_N42HQo1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:Annotations xmi:id="_N42uUY1GEemfRI0MbuUd1w" base_Element="_N42HQo1GEemfRI0MbuUd1w">
+    <annotations xmi:id="_N42uUo1GEemfRI0MbuUd1w" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_N43VYI1GEemfRI0MbuUd1w" base_Element="_N42uU41GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:Annotations xmi:id="_N43VYY1GEemfRI0MbuUd1w" base_Element="_N42uU41GEemfRI0MbuUd1w">
+    <annotations xmi:id="_N43VYo1GEemfRI0MbuUd1w" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_N438cI1GEemfRI0MbuUd1w" base_Element="_N43VY41GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:Annotations xmi:id="_N438cY1GEemfRI0MbuUd1w" base_Element="_N43VY41GEemfRI0MbuUd1w">
+    <annotations xmi:id="_N438co1GEemfRI0MbuUd1w" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_N44jgI1GEemfRI0MbuUd1w" base_Element="_N438c41GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:Annotations xmi:id="_N45KkI1GEemfRI0MbuUd1w" base_Element="_N438c41GEemfRI0MbuUd1w">
+    <annotations xmi:id="_N45KkY1GEemfRI0MbuUd1w" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_N45xoI1GEemfRI0MbuUd1w" base_Element="_N45Kko1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:Annotations xmi:id="_N46YsI1GEemfRI0MbuUd1w" base_Element="_N45Kko1GEemfRI0MbuUd1w">
+    <annotations xmi:id="_N46YsY1GEemfRI0MbuUd1w" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_N48N4I1GEemfRI0MbuUd1w" base_Element="_N47m0I1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:Annotations xmi:id="_N48N4Y1GEemfRI0MbuUd1w" base_Element="_N47m0I1GEemfRI0MbuUd1w">
+    <annotations xmi:id="_N48N4o1GEemfRI0MbuUd1w" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_N4808Y1GEemfRI0MbuUd1w" base_Element="_N4808I1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:Annotations xmi:id="_N49cAI1GEemfRI0MbuUd1w" base_Element="_N4808I1GEemfRI0MbuUd1w">
+    <annotations xmi:id="_N49cAY1GEemfRI0MbuUd1w" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_N4-DEI1GEemfRI0MbuUd1w" base_Element="_N49cAo1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:Annotations xmi:id="_N4-DEY1GEemfRI0MbuUd1w" base_Element="_N49cAo1GEemfRI0MbuUd1w">
+    <annotations xmi:id="_N4-DEo1GEemfRI0MbuUd1w" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_N6r6UI1GEemfRI0MbuUd1w" base_Element="_N6qFII1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:Annotations xmi:id="_N6shYI1GEemfRI0MbuUd1w" base_Element="_N6qFII1GEemfRI0MbuUd1w">
+    <annotations xmi:id="_N6tIcI1GEemfRI0MbuUd1w" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_N6wLwI1GEemfRI0MbuUd1w" base_Element="_N6u9oI1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:Reference xmi:id="_N6wy0I1GEemfRI0MbuUd1w" base_Element="_N6wLwY1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:Reference xmi:id="_N62SYI1GEemfRI0MbuUd1w" base_Element="_N61rUI1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:Reference xmi:id="_N7ADYI1GEemfRI0MbuUd1w" base_Element="_N6_cUI1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:Reference xmi:id="_N7BRgI1GEemfRI0MbuUd1w" base_Element="_N7AqcI1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:Reference xmi:id="_N7GKAI1GEemfRI0MbuUd1w" base_Element="_N7E74I1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:Reference xmi:id="_N7GxEI1GEemfRI0MbuUd1w" base_Element="_N7GKAY1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:Reference xmi:id="_N7MQoI1GEemfRI0MbuUd1w" base_Element="_N7LpkY1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_N7OF0I1GEemfRI0MbuUd1w" base_Element="_N7NewI1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:Annotations xmi:id="_N7Os4I1GEemfRI0MbuUd1w" base_Element="_N7NewI1GEemfRI0MbuUd1w">
+    <annotations xmi:id="_N7Os4Y1GEemfRI0MbuUd1w" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_N7PT841GEemfRI0MbuUd1w" base_Element="_N7PT8I1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:Annotations xmi:id="_N7P7AI1GEemfRI0MbuUd1w" base_Element="_N7PT8I1GEemfRI0MbuUd1w">
+    <annotations xmi:id="_N7P7AY1GEemfRI0MbuUd1w" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_N7RJII1GEemfRI0MbuUd1w" base_Element="_N7QiEI1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:Annotations xmi:id="_N7RJIY1GEemfRI0MbuUd1w" base_Element="_N7QiEI1GEemfRI0MbuUd1w">
+    <annotations xmi:id="_N7RJIo1GEemfRI0MbuUd1w" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Generics xmi:id="_N7SXQI1GEemfRI0MbuUd1w" genericsValue="Rental" base_Element="_N7RwMI1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:Generics xmi:id="_N7TlYI1GEemfRI0MbuUd1w" genericsValue="Rental" base_Element="_N7S-UY1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:Generics xmi:id="_N7UzgI1GEemfRI0MbuUd1w" genericsValue="Rental" base_Element="_N7UMcI1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_N7WBoI1GEemfRI0MbuUd1w" base_Element="_N7VakI1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:Annotations xmi:id="_N7WBoY1GEemfRI0MbuUd1w" base_Element="_N7VakI1GEemfRI0MbuUd1w">
+    <annotations xmi:id="_N7WBoo1GEemfRI0MbuUd1w" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_N7ZE8I1GEemfRI0MbuUd1w" base_Element="_N7Yd4I1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_N7cvUI1GEemfRI0MbuUd1w" base_Element="_N7cIQI1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_N7dWYY1GEemfRI0MbuUd1w" base_Element="_N7dWYI1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_N7ekgI1GEemfRI0MbuUd1w" base_Element="_N7d9cI1GEemfRI0MbuUd1w">
+    <associatedElement xmi:type="uml:Operation" xmi:id="_N7ekgY1GEemfRI0MbuUd1w" name="getId" method="_N7zUqI1GEemfRI0MbuUd1w">
+      <ownedParameter xmi:id="_N7fLko1GEemfRI0MbuUd1w" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedParameter>
+    </associatedElement>
+    <associatedElement xmi:type="uml:Operation" xmi:id="_N7fLkI1GEemfRI0MbuUd1w" name="setId" method="_N7zUqo1GEemfRI0MbuUd1w">
+      <ownedParameter xmi:id="_N7fLkY1GEemfRI0MbuUd1w" name="id">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedParameter>
+    </associatedElement>
+  </UMLLabProfile:LegacyStyledElement>
+  <UMLLabProfile:Annotations xmi:id="_N7fyoI1GEemfRI0MbuUd1w" base_Element="_N7ekgY1GEemfRI0MbuUd1w">
+    <annotations xmi:id="_N7fyoY1GEemfRI0MbuUd1w" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Generics xmi:id="_N7gZsI1GEemfRI0MbuUd1w" genericsValue="Rental" base_Element="_N7fyoo1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_N7hn0I1GEemfRI0MbuUd1w" base_Element="_N7hAwI1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_N7iO4I1GEemfRI0MbuUd1w" base_Element="_N7hn0Y1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_N7iO4o1GEemfRI0MbuUd1w" base_Element="_N7iO4Y1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_N7i18Y1GEemfRI0MbuUd1w" base_Element="_N7i18I1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_N7i1841GEemfRI0MbuUd1w" base_Element="_N7i18o1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_N7kEEI1GEemfRI0MbuUd1w" base_Element="_N7jdAI1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_N7kEEo1GEemfRI0MbuUd1w" base_Element="_N7kEEY1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_N7krII1GEemfRI0MbuUd1w" base_Element="_N7kEE41GEemfRI0MbuUd1w">
+    <associatedElement xmi:type="uml:Operation" xmi:id="_N7krIY1GEemfRI0MbuUd1w" name="getInstance" isStatic="true" method="_N72_AI1GEemfRI0MbuUd1w">
+      <ownedParameter xmi:id="_N7krIo1GEemfRI0MbuUd1w" type="_N4p6AI1GEemfRI0MbuUd1w" direction="return"/>
+    </associatedElement>
+  </UMLLabProfile:LegacyStyledElement>
+  <uml:OpaqueBehavior xmi:id="_N7w4YI1GEemfRI0MbuUd1w" name="RentalTypes" specification="_N3_LoI1GEemfRI0MbuUd1w">
+    <ownedParameter xmi:id="_N7w4YY1GEemfRI0MbuUd1w" name="value">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedParameter>
+    <ownedParameter xmi:id="_N7w4Yo1GEemfRI0MbuUd1w" type="_N36TII1GEemfRI0MbuUd1w" direction="return"/>
+    <language>java</language>
+    <body>this.value = value;
+
+	</body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_N7xfcI1GEemfRI0MbuUd1w" name="getValue" specification="_N4CO8I1GEemfRI0MbuUd1w">
+    <ownedParameter xmi:id="_N7xfcY1GEemfRI0MbuUd1w" direction="return">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>return value;
+	</body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_N7xfco1GEemfRI0MbuUd1w" name="setValue" specification="_N4C2AI1GEemfRI0MbuUd1w">
+    <ownedParameter xmi:id="_N7xfc41GEemfRI0MbuUd1w" name="value">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>this.value = value;
+	</body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_N7zUqI1GEemfRI0MbuUd1w" name="getId" specification="_N7ekgY1GEemfRI0MbuUd1w">
+    <ownedParameter xmi:id="_N7zUqY1GEemfRI0MbuUd1w" direction="return">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>return this.id;
+	</body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_N7zUqo1GEemfRI0MbuUd1w" name="setId" specification="_N7fLkI1GEemfRI0MbuUd1w">
+    <ownedParameter xmi:id="_N7z7sI1GEemfRI0MbuUd1w" name="id">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>this.id = id;
+	</body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_N72_AI1GEemfRI0MbuUd1w" name="getInstance" specification="_N7krIY1GEemfRI0MbuUd1w">
+    <ownedParameter xmi:id="_N72_AY1GEemfRI0MbuUd1w" type="_N4p6AI1GEemfRI0MbuUd1w" direction="return"/>
+    <language>java</language>
+    <body>if (instance == null) {
+			instance = new Menu();
+		}
+		return instance;
+	</body>
+  </uml:OpaqueBehavior>
+  <UMLLabProfile:Reference xmi:id="_N7_h4I1GEemfRI0MbuUd1w" base_Element="_N7-60I1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:Reference xmi:id="_N8AI8o1GEemfRI0MbuUd1w" base_Element="_N8AI8I1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:Reference xmi:id="_N8AwAo1GEemfRI0MbuUd1w" base_Element="_N8AwAI1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:Reference xmi:id="_N8BXEI1GEemfRI0MbuUd1w" base_Element="_N8AwA41GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:Reference xmi:id="_N8B-II1GEemfRI0MbuUd1w" base_Element="_N8BXEY1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:Reference xmi:id="_N8ClMI1GEemfRI0MbuUd1w" base_Element="_N8B-IY1GEemfRI0MbuUd1w"/>
+  <UMLLabProfile:Reference xmi:id="_N8ClM41GEemfRI0MbuUd1w" base_Element="_N8ClMY1GEemfRI0MbuUd1w"/>
+</xmi:XMI>
