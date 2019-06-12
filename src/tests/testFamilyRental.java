@@ -1,5 +1,6 @@
 package tests;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import java.util.ArrayList;
@@ -47,6 +48,12 @@ class testFamilyRental {
 		associateRentals.add(new WeekRental(0, null, null));
 
 		assertThrows(Exception.class, () -> familyRental.addRentals(associateRentals));
+	}
+	
+	@Test
+	void testApplyDiscount() throws Exception {
+		FamilyRental familyRental = new FamilyRental(0);
+		assertEquals(7, familyRental.applyDiscount(10));
 	}
 
 }

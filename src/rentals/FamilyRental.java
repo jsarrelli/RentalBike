@@ -60,7 +60,7 @@ public class FamilyRental extends Promotion {
 		return associateRentals.size() <= 5 && associateRentals.size() >= 3;
 	}
 
-	float applyDiscount(float input) {
+	public float applyDiscount(float input) {
 		return (float) (input*0.7);
 	}
 }
